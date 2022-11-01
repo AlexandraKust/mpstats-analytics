@@ -1,0 +1,131 @@
+@media (min-width: 768px) {
+    .top-menu-container {
+        .logo {
+            img {
+                height: 22px;
+            }
+        }
+
+        .top-menu {
+            padding: 12px 32px;
+
+            .menu {
+                margin-left: 16px;
+
+                li {
+                    margin:      0 0 0 16px;
+                    padding:     8px 0;
+                    line-height: 0;
+
+                    &.dropdown {
+                        & > a {
+                            position:      relative;
+                            padding-right: 17px;
+                            display:       block;
+
+                            &:after {
+                                content:         '';
+                                position:        absolute;
+                                top:             5px;
+                                right:           0;
+                                width:           10px;
+                                height:          6px;
+                                background:      url('/public/images/v4/arrow-down-white.svg') no-repeat center;
+                                background-size: contain;
+                                transition:      transform linear 0.25s;
+                            }
+                        }
+
+                        .dropdown-list {
+                            position:    absolute;
+                            top:         100%;
+                            left:        -20px;
+                            padding-top: 18px;
+                            display:     none;
+                        }
+
+                        ul {
+                            padding:       23px 27px 27px;
+                            background:    white;
+                            border-radius: 10px;
+                            min-width:     230px;
+                            height:        auto;
+                            position:      relative;
+                            box-shadow:    0 12px 23px rgba(11, 38, 22, 0.2);
+
+                            &:before {
+                                position:     absolute;
+                                content:      '';
+                                top:          -10px;
+                                left:         27px;
+                                width:        0;
+                                height:       0;
+                                border-style: solid;
+                                border-width: 0 31px 35px 31px;
+                                border-color: transparent transparent white transparent;
+                            }
+
+                            li {
+                                margin:  0;
+                                padding: 0;
+
+                                &:not(:last-of-type) {
+                                    margin-bottom: 20px;
+                                }
+                            }
+
+                            a {
+                                font-weight:         400;
+                                font-size:           16px;
+                                line-height:         16px;
+                                letter-spacing:      -0.01em;
+                                color:               black;
+                                border-bottom:       1px solid white;
+                                transition:          border-color linear 0.25s;
+                                transition-property: border-color, color;
+
+                                &:hover {
+                                    color:           $green-7;
+                                    border-color:    $gray-light-4;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        &:hover, &.opened {
+                            &:after {
+                                transform: rotate(180deg);
+                            }
+
+                            & > div {
+                                display: block;
+                            }
+
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+
+                        a:hover {
+                            text-decoration: none !important;
+                        }
+                    }
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .buttons-container {
+                & > * {
+                    padding: 8px;
+                }
+            }
+        }
+
+        .side-menu {
+            display: none !important;
+        }
+    }
+}

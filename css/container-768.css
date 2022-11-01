@@ -1,0 +1,64 @@
+@media (min-width: 768px) {
+  .block-footer .top {
+    padding: 32px 32px 0;
+    background: url(/public/images/v4/footer-lines-tablet.svg) no-repeat top right;
+    background-size: 100% auto;
+  }
+  .block-footer .top .title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .block-footer .top .block-1 {
+    margin-bottom: 16px;
+  }
+  .block-footer .top .block-1 .logo {
+    padding: 0;
+    margin-right: 46px;
+  }
+  .block-footer .top .block-1 .logo img, .block-footer .top .block-1 .sk img {
+    height: 32px;
+  }
+  .block-footer .top .block-2 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 48px;
+  }
+  .block-footer .top .block-3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .block-footer .top .block-4 {
+    margin-bottom: 48px;
+  }
+  .block-footer .top .block-5 {
+    margin-bottom: 56px;
+  }
+  .block-footer .top .block-5 img {
+    margin-bottom: 0;
+  }
+  .block-footer .top .menu > div {
+    width: 50%;
+  }
+  .block-footer .top .menu .title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .block-footer .top .menu ul {
+    margin-bottom: 48px;
+  }
+  .block-footer .top .menu li {
+    margin-bottom: 24px;
+  }
+  .block-footer .top .menu a {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .block-footer .bottom {
+    padding: 24px 32px;
+  }
+  .block-footer .bottom .block-1 a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

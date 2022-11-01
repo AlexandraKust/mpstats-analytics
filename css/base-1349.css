@@ -1,0 +1,8 @@
+@media (min-width: 1349px) {
+  .alert {
+    padding: 22px 22px 22px 106px;
+  }
+  .alert:before {
+    left: 50px;
+  }
+}

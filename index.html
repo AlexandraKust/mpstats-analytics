@@ -1,0 +1,1856 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <title>MPSTATS</title>
+
+    <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://widget.apibcknd.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- тут подключить стили -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="page-container" class="d-flex flex-column">
+        <div class="top-menu-container scrolled">
+            <div class="top-menu container-fluid d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <a class="logo" href="/">
+                        <img loading="lazy" src="/public/images/logo/logo-white.svg">
+                    </a>
+
+                    <div class="menu d-none d-md-block">
+                        <ul class="d-flex justify-content-between">
+                            <li>
+                                <a href="/tarif" target="_blank">Тарифы</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">
+                                    Возможности
+                                </a>
+
+                                <div class="dropdown-list">
+                                    <ul>
+                                        <li>
+                                            <a href="/learning">Обучение</a>
+                                        </li>
+                                        <li>
+                                            <a href="/vacancy">Вакансии</a>
+                                        </li>
+                                        <li>
+                                            <a href="/mpsellers">Сообщество</a>
+                                        </li>
+                                        <li>
+                                            <a href="/partnership">Партнерство</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/consulting">Консалтинг</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="buttons-container d-flex align-items-center">
+                    <a class="phone-link d-none d-xxl-block" href="tel:89699991728">+7 (969) 999-17-28</a>
+
+                    <a class="d-none d-md-inline d-xxl-none" href="">
+                        <img src="/public/images/v4/icon-phone-white.svg">
+                    </a>
+
+                    <a class="d-none d-md-inline" href="https://mpstats.me/" target="_blank">
+                        <img src="/public/images/v4/textsms.svg">
+                    </a>
+
+                    <a href="/login" class="d-xxl-none">
+                        <img src="/public/images/v4/account_circle.svg">
+                    </a>
+                    <a href="/login" class="d-none d-xxl-block btn">
+                        Войти
+                        <img src="/public/images/v4/account_circle.svg">
+                    </a>
+
+                    <button class="toggle-menu d-md-none">
+                        <img loading="lazy" src="/public/images/v4/menu.svg">
+                    </button>
+                </div>
+            </div>
+
+            <div class="side-menu">
+                <div class="d-flex flex-column">
+                    <div class="top-menu d-flex align-items-center justify-content-between">
+                        <a class="logo" href="/">
+                            <img loading="lazy" src="/public/images/logo/logo-green-black.svg">
+                        </a>
+
+                        <div class="buttons-container d-flex align-items-center">
+                            <a href="/login">
+                                <img src="/public/images/v4/account_circle-black.svg">
+                            </a>
+
+                            <div class="cursor-pointer">
+                                <img src="/public/images/v4/close-black.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-container flex-grow-1">
+                        <div>
+                            <div class="buttons d-flex justify-content-between">
+                                <div>
+                                    <a href="https://mpstats.me/" target="_blank">
+                                        <div
+                                            class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                            <img src="/public/images/v4/textsms-black.svg">
+
+                                            <span>Чат-бот</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="tel:89699991728">
+                                        <div
+                                            class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                            <img src="/public/images/v4/icon-phone-black.svg">
+
+                                            <span>Позвонить</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="menu d-flex flex-column">
+                                <li>
+                                    <a href="/tarif" target="_blank">Тарифы</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        Возможности
+                                    </a>
+
+                                    <div class="dropdown-list">
+                                        <ul>
+                                            <li>
+                                                <a href="/learning">Обучение</a>
+                                            </li>
+                                            <li>
+                                                <a href="/vacancy">Вакансии</a>
+                                            </li>
+                                            <li>
+                                                <a href="/mpsellers">Сообщество</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partnership">Партнерство</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/consulting">Консалтинг</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="social-container">
+                        <a href="https://www.youtube.com/c/mpstats" target="_blank">
+                            <img src="/public/images/v4/yt.svg">
+                        </a>
+
+                        <a href="https://telegram.me/analyticsmpstats" target="_blank">
+                            <img src="/public/images/v4/tg.svg">
+                        </a>
+
+                        <a href="https://vk.com/mpstatsio" target="_blank">
+                            <img src="/public/images/v4/vk.svg">
+                        </a>
+                    </div>
+
+                    <div class="text-container">
+                        <div class="address">
+                            195257, г. Санкт-Петербург, Гражданский пр., д. 100 стр. 1, пом. 8
+                            <br>
+                            <a href="tel:89699991728">+7 (969) 999-17-28</a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href="mailto:info@mpstats.io">info@mpstats.io</a>
+                        </div>
+
+                        <div class="offer">
+                            Данный сайт носит информационно-справочный характер и ни при каких условиях не является
+                            публичной офертой.
+                        </div>
+
+                        <div class="copyright">
+                            © 2022 ООО «МПСТАТС». Все права защищены.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!-- тут верстать все что надо кроме верхнего меню и футера -->
+            <!-- вне этого блока ничего не делать без крайней необходимости -->
+
+            <!-- ------------ Шапка ------------ -->
+            <header class="header">
+                <div class="custom-container">
+                    <div class="header__content">
+                        <div class="header__title">Комплексный<br> инструмент аналитики<br> и управления продажами<br>на
+                            маркетплейсах
+                        </div>
+                        <div class="container-fluid">
+                            <div class="header__row row justify-content-between">
+                                <div class="header__item col-auto shrink">
+                                    <div class="header__subtitle">Начни пользоваться уже сейчас</div>
+                                    <button class="header__btn" data-toggle="modal"
+                                        data-target="#modalSubscription">Перейти к оплате</button>
+                                    <div class="header__statistic">
+                                        <div class="header__number">&gt; 250 000</div>
+                                        <div class="header__info">зарегистированных пользователей<br> на платформе
+                                            MPSTATS
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__instruments instruments col-6">
+                                    <div class="instruments__item">
+                                        <div class="instruments__title">Внутренняя аналитика</div>
+                                        <div class="instruments__text">Выстрой эффективную систему управления
+                                            собственными
+                                            продажами
+                                        </div>
+                                    </div>
+                                    <div class="instruments__item">
+                                        <div class="instruments__title">SEO</div>
+                                        <div class="instruments__text">Рынок и конкуренты как<br> на ладони, чтобы
+                                            чувствовать
+                                            себя
+                                            уверенно</div>
+                                    </div>
+                                    <div class="instruments__item">
+                                        <div class="instruments__title">Внешняя аналитика</div>
+                                        <div class="instruments__text">Повышение видимости в выдаче с помощью наших
+                                            уникальных
+                                            инструментов</div>
+                                    </div>
+                                    <div class="instruments__item">
+                                        <div class="instruments__title">Data science</div>
+                                        <div class="instruments__text">Прогнозы<br> искусственного интеллекта<br> и
+                                            математические
+                                            модели
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__image">
+                            <img src="media/img/header-image.png" alt="">
+                            <img src="media/img/header-image-arrow.png" alt="">
+                        </div>
+                        <img class="header__star" src="media/img/green-star.png" alt="">
+                    </div>
+                </div>
+            </header>
+
+            <!-- ------------ Блок Видео ------------ -->
+            <section class="video">
+                <div class="custom-container">
+                    <div class="container-fluid">
+                        <div class="video__row row align-items-xxl-center">
+                            <a href="#" class="video__item col-xxl-6">
+                                <div class="video__item-content">
+                                    <div class="video__name">Подробный рассказ<br> обо всех функциях сервиса</div>
+                                    <div class="video__btn">
+                                        <svg width="30" height="32" viewbox="0 0 30 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.8127 14.2475C30.1945 15.0073 30.1945 16.9927 28.8127 17.7525L3.46365 31.6909C2.13075 32.4238 0.500002 31.4595 0.500002 29.9384L0.500004 2.06161C0.500004 0.540501 2.13075 -0.423833 3.46365 0.309073L28.8127 14.2475Z"
+                                                fill="#38AC5A" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="video__text col-xxl-6">
+                                <div class="video__text-content">
+                                    <h2 class="video__title"><span>Видео с обзором</span><br>
+                                        основных возможностей<br>
+                                        сервиса</h2>
+                                    <div class="video__subtitle">Посмотрите видео о том, какие инструменты сервиса
+                                        помогут
+                                        увеличить
+                                        прибыль на маркетплейсах. </div>
+                                    <p class="video__info mb-0"><b>Дмитрий Черобаев,</b> основатель MPSTATS, расскажет о
+                                        функционале в
+                                        удобном
+                                        структурированном виде.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------ Блок Нам доверяют ----------- -->
+            <section class="trust">
+                <div class="custom-container">
+                    <div class="trust__title">Нам доверяют</div>
+                    <div class="trust__row d-flex">
+                        <div class="trust__item">
+                            <img src="media/icon/trust/zarina.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/tvoe.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/estel.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/simaland.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/mi.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/sela.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/loreal.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/metro.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/lenta.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/sts.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/logo-Love-Republic.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon//trust/lex.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/lacoste.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/dns.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/levrana.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/uz-cotton.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/holycorn.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/ostin.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/huawei.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/sportmaster.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/askona.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/henderson.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/lazurit.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/splat.svg" alt="">
+                        </div>
+                        <div class="trust__item">
+                            <img src="media/icon/trust/kleo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------ Блок Эфир ------------ -->
+            <section class="broadcast">
+                <div class="custom-container">
+                    <div class="container-fluid">
+                        <div class="broadcast__row row align-items-md-center justify-content-md-between">
+                            <div class="broadcast__text col-md-6">
+                                <div class="broadcast__text-content">
+                                    <div class="broadcast__title">Эфир по SEO на WB и Ozon</div>
+                                    <div class="broadcast__subtitle">
+                                        Запредельная концентрация полезностей<br> и лайфхаков👌 все тонкости работы с
+                                        SEO,
+                                        учитывая последние изменения маркетплейсов
+                                    </div>
+                                    <button class="broadcast__btn">Смотреть сейчас</button>
+                                </div>
+                            </div>
+                            <div class="broadcast__picture col-md-6">
+                                <div class="broadcast__picture-content">
+                                    <img src="media/img/broadcast-picture.png" alt="">
+                                    <img src="media/img/green-star.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- --------- Блок Зачем и для чего нужен сервис ---------- -->
+            <section class="service">
+                <div class="custom-container">
+                    <div class="service__title">
+                        Зачем и для чего<br> нужен <span>сервис</span>?
+                    </div>
+                    <div class="service__subtitle">
+                        <span>MPStats</span> поможет на каждом этапе Вашего<br> роста на маркетплейсе
+                    </div>
+                    <div
+                        class="service__arrow-prev d-none d-md-flex d-xxl-none align-items-center justify-content-center">
+                        <svg width="17" height="16" viewbox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM17 9H1V7H17V9Z" />
+                        </svg>
+                    </div>
+                    <div
+                        class="service__arrow-next d-none d-md-flex d-xxl-none align-items-center justify-content-center">
+                        <svg width="17" height="16" viewbox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="service__row d-flex">
+                    <div class="service__item d-flex flex-column">
+                        <div class="service__item-icon">
+                            <svg width="44" height="44" viewbox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40.5778 44L25.1778 28.6C23.9556 29.5778 22.55 30.3519 20.9611 30.9222C19.3722 31.4926 17.6815 31.7778 15.8889 31.7778C11.4481 31.7778 7.69022 30.2402 4.61511 27.1651C1.53837 24.0884 0 20.3296 0 15.8889C0 11.4481 1.53837 7.68941 4.61511 4.61267C7.69022 1.53756 11.4481 0 15.8889 0C20.3296 0 24.0884 1.53756 27.1651 4.61267C30.2402 7.68941 31.7778 11.4481 31.7778 15.8889C31.7778 17.6815 31.4926 19.3722 30.9222 20.9611C30.3519 22.55 29.5778 23.9556 28.6 25.1778L44 40.5778L40.5778 44ZM15.8889 26.8889C18.9444 26.8889 21.5421 25.8199 23.6818 23.6818C25.8199 21.5421 26.8889 18.9444 26.8889 15.8889C26.8889 12.8333 25.8199 10.2357 23.6818 8.096C21.5421 5.95793 18.9444 4.88889 15.8889 4.88889C12.8333 4.88889 10.2357 5.95793 8.096 8.096C5.95793 10.2357 4.88889 12.8333 4.88889 15.8889C4.88889 18.9444 5.95793 21.5421 8.096 23.6818C10.2357 25.8199 12.8333 26.8889 15.8889 26.8889ZM11 23.2222L12.8333 17.2333L7.94444 13.3222H13.9333L15.8889 7.33333L17.8444 13.3222H23.8333L18.9444 17.2333L20.7778 23.2222L15.8889 19.4333L11 23.2222Z"
+                                    fill="url(#paint0_linear_66_468)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_66_468" x1="3.58306" y1="22" x2="42.7314"
+                                        y2="22.4895" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="service__item-title">Запуск</div>
+                        <div class="service__item-text">
+                            Найди выгодные товары для выхода на маркетплейсы
+                        </div>
+                    </div>
+                    <div class="service__item d-flex flex-column">
+                        <div class="service__item-icon">
+                            <svg width="44" height="44" viewbox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.90151 17.5284L12.1815 19.337C12.6936 18.314 13.2241 17.3274 13.7728 16.3775C14.3215 15.4275 14.9251 14.4775 15.5835 13.5275L12.5107 12.9246L7.90151 17.5284ZM15.6933 22.0774L21.9486 28.2705C23.485 27.6859 25.1312 26.7907 26.8871 25.585C28.643 24.3792 30.2891 23.0091 31.8255 21.4745C34.3862 18.9168 36.3894 16.0764 37.8351 12.9531C39.2793 9.82843 39.91 6.95072 39.727 4.32C37.0932 4.13731 34.2033 4.76722 31.0573 6.20973C27.9114 7.65371 25.058 9.65451 22.4974 12.2122C20.961 13.7467 19.5892 15.3909 18.382 17.1448C17.1748 18.8986 16.2786 20.5428 15.6933 22.0774ZM25.4604 18.5149C24.6191 17.6746 24.1984 16.642 24.1984 15.4172C24.1984 14.194 24.6191 13.1621 25.4604 12.3218C26.3018 11.4814 27.3443 11.0612 28.5881 11.0612C29.8319 11.0612 30.8744 11.4814 31.7158 12.3218C32.5572 13.1621 32.9778 14.194 32.9778 15.4172C32.9778 16.642 32.5572 17.6746 31.7158 18.5149C30.8744 19.3553 29.8319 19.7755 28.5881 19.7755C27.3443 19.7755 26.3018 19.3553 25.4604 18.5149ZM26.503 36.1078L31.1122 31.5041L30.5086 28.4349C29.5575 29.0926 28.6064 29.686 27.6553 30.215C26.7042 30.7456 25.7165 31.2666 24.6922 31.7781L26.503 36.1078ZM43.6778 0.319116C44.3728 4.74018 43.9434 9.04214 42.3894 13.225C40.834 17.4093 38.1541 21.4014 34.3496 25.2013L35.4471 30.6272C35.5934 31.3579 35.5568 32.0704 35.3373 32.7646C35.1178 33.4589 34.752 34.0617 34.2399 34.5733L25.0215 43.7808L20.4122 32.9839L11.0292 23.6119L0.219487 19.0082L9.38304 9.80066C9.89518 9.28913 10.5083 8.92376 11.2223 8.70453C11.9349 8.4853 12.657 8.44877 13.3887 8.59492L18.821 9.69105C22.6254 5.89112 26.6127 3.2056 30.783 1.63448C34.9532 0.0633521 39.2515 -0.375101 43.6778 0.319116ZM4.11537 30.5724C5.39571 29.2936 6.95918 28.6446 8.8058 28.6256C10.6539 28.6081 12.2181 29.2387 13.4984 30.5176C14.7788 31.7964 15.4094 33.358 15.3904 35.2024C15.3728 37.0483 14.7239 38.6107 13.4435 39.8895C12.529 40.8029 11.0021 41.5885 8.86286 42.2462C6.72214 42.9039 3.76785 43.4885 0 44C0.512135 40.2366 1.09743 37.2858 1.75589 35.1476C2.41435 33.0109 3.20084 31.4858 4.11537 30.5724ZM7.24305 33.6415C6.87724 34.0069 6.51143 34.6741 6.14562 35.6431C5.77981 36.6106 5.52374 37.5876 5.37742 38.5741C6.36511 38.428 7.34402 38.1817 8.31415 37.8354C9.28281 37.4875 9.95005 37.1309 10.3159 36.7655C10.7548 36.3271 10.9926 35.7973 11.0292 35.1761C11.0658 34.555 10.8646 34.0252 10.4256 33.5867C9.98663 33.1483 9.45621 32.9378 8.83433 32.9554C8.21245 32.9744 7.68202 33.2031 7.24305 33.6415Z"
+                                    fill="url(#paint0_linear_66_87)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_66_87" x1="3.58306" y1="22" x2="42.7314"
+                                        y2="22.4895" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="service__item-title">Старт работы</div>
+                        <div class="service__item-text">
+                            Научись торговать на примере лидеров, управляй ценой и поставками, шпионь за конкурентами
+                        </div>
+                    </div>
+                    <div class="service__item d-flex flex-column">
+                        <div class="service__item-icon">
+                            <svg width="44" height="39" viewbox="0 0 44 39" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 39V33.4286H44V39H0ZM0 27.8571V22.2857H44V27.8571H0ZM0 16.7143V10.1679L16.5 0L30.25 9.88929L44 0V6.825L30.25 16.7143L16.2938 6.68571L0 16.7143Z"
+                                    fill="url(#paint0_linear_66_1654)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_66_1654" x1="3.58306" y1="19.5" x2="42.7297"
+                                        y2="20.0522" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="service__item-title">Рост</div>
+                        <div class="service__item-text">
+                            Сервис Все-в-одном: сконцентрируйся на ключевых метриках для развития торговой матрицы и
+                            увеличения прибыли
+                        </div>
+                    </div>
+                    <div class="service__item d-flex flex-column">
+                        <div class="service__item-icon">
+                            <svg width="24" height="44" viewbox="0 0 24 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.19012 44L9.59535 26.8889H1.17705C0.575746 26.8889 0.204539 26.7259 0.0634327 26.4C-0.0760705 26.0741 0.0145262 25.6259 0.335223 25.0556L14.4058 0H16.811L14.4058 17.1111H22.8241C23.4254 17.1111 23.7958 17.2741 23.9353 17.6C24.0764 17.9259 23.9866 18.3741 23.6659 18.9444L9.59535 44H7.19012Z"
+                                    fill="url(#paint0_linear_66_2464)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_66_2464" x1="1.9544" y1="22" x2="23.3104"
+                                        y2="22.1457" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="service__item-title">Кризис</div>
+                        <div class="service__item-text">
+                            Спады случаются даже с большими компаниями - это нормально, когда растешь и идешь на новый
+                            рынок. MPstats поможет найти и излечить болезни роста.
+                        </div>
+                    </div>
+                    <div class="service__item d-flex flex-column">
+                        <div class="service__item-icon">
+                            <svg width="48" height="48" viewbox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="4" fill="url(#paint0_linear_66_97)" />
+                                <path
+                                    d="M8.45455 39C7.50455 39 6.69158 38.6547 6.01564 37.9641C5.33855 37.2724 5 36.4412 5 35.4706C5 34.5 5.33855 33.6688 6.01564 32.9771C6.69158 32.2865 7.50455 31.9412 8.45455 31.9412H8.90882C9.03779 31.9412 9.17424 31.9706 9.31818 32.0294L17.1773 24C17.1197 23.8529 17.0909 23.7129 17.0909 23.58V23.1176C17.0909 22.1471 17.4295 21.3159 18.1065 20.6241C18.7825 19.9335 19.5955 19.5882 20.5455 19.5882C21.4955 19.5882 22.309 19.9335 22.9861 20.6241C23.662 21.3159 24 22.1471 24 23.1176C24 23.1765 23.9712 23.4706 23.9136 24L28.3182 28.5C28.4621 28.4412 28.5992 28.4118 28.7293 28.4118H29.6344C29.7645 28.4118 29.9015 28.4412 30.0455 28.5L36.1773 22.2353C36.1197 22.0882 36.0909 21.9482 36.0909 21.8153V21.3529C36.0909 20.3824 36.4289 19.5512 37.1048 18.8594C37.7819 18.1688 38.5955 17.8235 39.5455 17.8235C40.4955 17.8235 41.309 18.1688 41.9861 18.8594C42.662 19.5512 43 20.3824 43 21.3529C43 22.3235 42.662 23.1541 41.9861 23.8447C41.309 24.5365 40.4955 24.8824 39.5455 24.8824H39.0929C38.9628 24.8824 38.8258 24.8529 38.6818 24.7941L32.55 31.0588C32.6076 31.2059 32.6364 31.3459 32.6364 31.4788V31.9412C32.6364 32.9118 32.2984 33.7429 31.6225 34.4347C30.9454 35.1253 30.1318 35.4706 29.1818 35.4706C28.2318 35.4706 27.4188 35.1253 26.7429 34.4347C26.0658 33.7429 25.7273 32.9118 25.7273 31.9412V31.4788C25.7273 31.3459 25.7561 31.2059 25.8136 31.0588L21.4091 26.5588C21.2652 26.6176 21.1281 26.6471 20.998 26.6471H20.5455C20.4879 26.6471 20.2 26.6176 19.6818 26.5588L11.8227 34.5882C11.8803 34.7353 11.9091 34.8753 11.9091 35.0082V35.4706C11.9091 36.4412 11.5705 37.2724 10.8935 37.9641C10.2175 38.6547 9.40455 39 8.45455 39ZM10.1818 21.3088L9.10227 18.9265L6.77045 17.8235L9.10227 16.7206L10.1818 14.3382L11.2614 16.7206L13.5932 17.8235L11.2614 18.9265L10.1818 21.3088ZM29.1818 19.5882L27.5409 15.9706L24 14.2941L27.5409 12.6176L29.1818 9L30.8227 12.6176L34.3636 14.2941L30.8227 15.9706L29.1818 19.5882Z"
+                                    fill="white" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_66_97" x1="3.90879" y1="24" x2="46.6161"
+                                        y2="24.534" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="service__item-title">Масштабируй свой бизнес</div>
+                        <div class="service__item-text">
+                            Тысячи SKU и большая команда? Продавцы из ТОП-1000 выбирают Mpstats как самый удобный и
+                            функциональный
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------ Блок Попробовать перед покупкой ------------ -->
+            <section class="testing">
+                <div class="custom-container">
+                    <div class="container-fluid">
+                        <div class="testing__row row flex-md-nowrap justify-content-md-between align-items-md-center">
+                            <div class="testing__picture col-md">
+                                <div class="testing__picture-content">
+                                    <img src="media/img/phone.png" alt="" id="phone">
+                                    <img src="media/img/timer.png" alt="" id="timer">
+                                    <img src="media/img/rectagle.png" alt="" id="rectagle">
+                                    <img src="media/img/green-star.png" alt="" id="star">
+                                </div>
+                            </div>
+                            <div class="testing__text col-md-6">
+                                <div class="testing__text-content">
+                                    <div class="testing__title">Возможность попробовать<br> перед покупкой</div>
+                                    <div class="testing__subtitle">Оставь заявку и получи бесплатный доступ
+                                        к полному функционалу сервиса на 24 часа</div>
+                                    <a href="request.html" class="testing__btn" target="_blank">Попробовать сейчас</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------ Блок Интеграция лк по API ------------- -->
+            <section class="integration">
+                <div class="custom-container">
+                    <div class="container-fluid">
+                        <div class="integration__row row">
+                            <div class="integration__main col-md">
+                                <div class="integration__main-content">
+                                    <div class="integration__icon">
+                                        <svg width="48" height="48" viewbox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="48" height="48" rx="4" fill="url(#paint0_linear_66_2491)" />
+                                            <path
+                                                d="M13.25 39C10.4235 39 8.00883 38.0156 6.00605 36.0469C4.00201 34.0781 3 31.6719 3 28.8281C3 26.3906 3.72992 24.2188 5.18977 22.3125C6.64962 20.4063 8.55985 19.1875 10.9205 18.6562C11.697 15.7812 13.25 13.4531 15.5795 11.6719C17.9091 9.89063 20.5492 9 23.5 9C27.1341 9 30.2165 10.2731 32.7474 12.8194C35.2794 15.3669 36.5455 18.4688 36.5455 22.125C38.6886 22.375 40.4672 23.3044 41.881 24.9131C43.2937 26.5231 44 28.4062 44 30.5625C44 32.9062 43.185 34.8988 41.5549 36.54C39.9236 38.18 37.9432 39 35.6136 39H25.3636C24.3386 39 23.4615 38.6331 22.7322 37.8994C22.0016 37.1644 21.6364 36.2812 21.6364 35.25V25.5938L18.6545 28.5L16.0455 25.875L23.5 18.375L30.9545 25.875L28.3455 28.5L25.3636 25.5938V35.25H35.6136C36.9182 35.25 38.0208 34.7969 38.9216 33.8906C39.8223 32.9844 40.2727 31.875 40.2727 30.5625C40.2727 29.25 39.8223 28.1406 38.9216 27.2344C38.0208 26.3281 36.9182 25.875 35.6136 25.875H32.8182V22.125C32.8182 19.5312 31.91 17.32 30.0935 15.4913C28.2759 13.6637 26.078 12.75 23.5 12.75C20.922 12.75 18.7247 13.6637 16.9083 15.4913C15.0907 17.32 14.1818 19.5312 14.1818 22.125H13.25C11.4485 22.125 9.91098 22.7656 8.6375 24.0469C7.36402 25.3281 6.72727 26.875 6.72727 28.6875C6.72727 30.5 7.36402 32.0469 8.6375 33.3281C9.91098 34.6094 11.4485 35.25 13.25 35.25H17.9091V39H13.25Z"
+                                                fill="white" />
+                                            <defs>
+                                                <lineargradient id="paint0_linear_66_2491" x1="3.90879" y1="24"
+                                                    x2="46.6161" y2="24.534" gradientunits="userSpaceOnUse">
+                                                    <stop stop-color="#9399FF" />
+                                                    <stop offset="0.40625" stop-color="#6C99FF" />
+                                                    <stop offset="1" stop-color="#18C0FF" />
+                                                </lineargradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="integration__title">
+                                        Интеграция личного кабинета по API
+                                    </div>
+                                    <div class="integration__text">
+                                        Мы помогаем начинающим компаниям расти и развивать свой бизнес на
+                                        маркетплейсах. Аналитика собственных продаж для компаний с оборотом
+                                        <b>
+                                            до 300 000 в месяц бесплатно
+                                        </b>
+                                    </div>
+                                    <button class="integration__btn">Регистрация</button>
+                                    <div class="integration__info">
+                                        Регистрируйся прямо сейчас и почувствуй контроль над своими бизнес-процессами и
+                                        прозрачность данных
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="integration__list col-md">
+                                <div class="integration__list-content">
+                                    <div class="integration__list-item list-item">
+                                        <div class="list-item__icon">
+                                            <svg width="16" height="30" viewbox="0 0 16 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.79342 29.6667L6.3969 18.2593H0.784702C0.383831 18.2593 0.13636 18.1507 0.0422885 17.9334C-0.0507137 17.7161 0.00968411 17.4173 0.223482 17.0371L9.60387 0.333374H11.2074L9.60387 11.7408H15.2161C15.6169 11.7408 15.8639 11.8494 15.9569 12.0667C16.051 12.284 15.9911 12.5828 15.7773 12.963L6.3969 29.6667H4.79342Z"
+                                                    fill="url(#paint0_linear_66_1326)" />
+                                                <defs>
+                                                    <lineargradient id="paint0_linear_66_1326" x1="1.30293" y1="15"
+                                                        x2="15.5402" y2="15.0971" gradientunits="userSpaceOnUse">
+                                                        <stop stop-color="#9399FF" />
+                                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                                        <stop offset="1" stop-color="#18C0FF" />
+                                                    </lineargradient>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="list-item__title">
+                                            Получите все данные по вашим продажам на маркетплейсе:
+                                        </div>
+                                        <div class="list-item__text">
+                                            - Расчет поставки с учетом оборачиваемости<br>
+                                            - Лента продаж: количество выкупов и возвратов<br>
+                                            - Маржинальность, рентабельность и ABC-анализ
+                                        </div>
+                                    </div>
+                                    <div class="integration__list-item list-item list-item_white">
+                                        <div class="list-item__icon">
+                                            <svg width="16" height="30" viewbox="0 0 16 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.79342 29.6667L6.3969 18.2593H0.784702C0.383831 18.2593 0.13636 18.1507 0.0422885 17.9334C-0.0507137 17.7161 0.00968411 17.4173 0.223482 17.0371L9.60387 0.333374H11.2074L9.60387 11.7408H15.2161C15.6169 11.7408 15.8639 11.8494 15.9569 12.0667C16.051 12.284 15.9911 12.5828 15.7773 12.963L6.3969 29.6667H4.79342Z"
+                                                    fill="url(#paint0_linear_66_1326)" />
+                                                <defs>
+                                                    <lineargradient id="paint0_linear_66_1326" x1="1.30293" y1="15"
+                                                        x2="15.5402" y2="15.0971" gradientunits="userSpaceOnUse">
+                                                        <stop stop-color="#9399FF" />
+                                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                                        <stop offset="1" stop-color="#18C0FF" />
+                                                    </lineargradient>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="list-item__title">
+                                            А также вы можете использовать API от MPSTATS, например, синхронизировав
+                                            наши возможности с другими программами
+                                        </div>
+                                        <div class="list-item__text">
+                                            Это поможет сравнить ситуацию на маркетплейсах со всеми каналами продаж
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------ Блок почему нельзя выходить на мп без данных ------------ -->
+            <section class="reasons">
+                <div class="custom-container">
+                    <div class="container-fluid">
+                        <div class="reasons__row row">
+                            <div class="reasons__text col-md">
+                                <div class="reasons__text-content">
+                                    <div class="reasons__title">
+                                        Почему нельзя выходить на маркетплейс <span>без данных</span>
+                                    </div>
+                                    <div class="reasons__subtitle">
+                                        Рынок меняется быстро, поэтому доступ к актуальным данным критически важен
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reasons__enumeration enumeration col-md">
+                                <div class="reasons__enumeration-content">
+                                    <div class="enumeration__item">
+                                        <div class="enumeration__number">
+                                            <svg width="13" height="30" viewbox="0 0 13 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.6667 0.333344V29.6667H8.62037V4.6303L1.75926 8.79572L0 5.9457L9.10417 0.333344H12.6667Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                        <div class="enumeration__text">
+                                            Одна поставка нераспроданного товара многократно дороже подписки на сервис
+                                            аналитики
+                                        </div>
+                                    </div>
+                                    <div class="enumeration__item">
+                                        <div class="enumeration__number">
+                                            <svg width="19" height="30" viewbox="0 0 19 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.43651 0.333344C11.1645 0.333344 12.6766 0.678949 13.9726 1.37016C15.2974 2.06137 16.3198 3.01179 17.0398 4.22141C17.7599 5.40223 18.1199 6.74146 18.1199 8.23909C18.1199 9.99592 17.7167 11.6807 16.9102 13.2936C16.1326 14.9064 14.923 16.6488 13.2814 18.5209C11.6397 20.3929 9.1485 22.9994 5.80764 26.3402H18.8111L18.3359 29.6667H1.27156V26.513C5.13083 22.5097 7.86688 19.5865 9.47971 17.7433C11.0925 15.8712 12.2446 14.244 12.9358 12.8616C13.627 11.4791 13.9726 9.99592 13.9726 8.41189C13.9726 6.91426 13.5406 5.74784 12.6766 4.91263C11.8126 4.04861 10.6605 3.6166 9.2205 3.6166C8.03968 3.6166 7.00286 3.86141 6.11005 4.35102C5.21723 4.84063 4.26681 5.64704 3.2588 6.77026L0.666748 4.69662C1.84757 3.2278 3.15799 2.13338 4.59802 1.41336C6.03805 0.693349 7.65088 0.333344 9.43651 0.333344Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                        <div class="enumeration__text">
+                                            Проверка гипотез с Mpstats занимает минуты
+                                        </div>
+                                    </div>
+                                    <div class="enumeration__item">
+                                        <div class="enumeration__number">
+                                            <svg width="19" height="31" viewbox="0 0 19 31" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.58136 0.833328C11.336 0.833328 12.8359 1.15878 14.0811 1.80969C15.3546 2.4606 16.3169 3.33791 16.9678 4.44162C17.647 5.54534 17.9866 6.74811 17.9866 8.04992C17.9866 9.77624 17.4772 11.2054 16.4584 12.3374C15.4678 13.4411 14.1377 14.1911 12.468 14.5873C14.3641 14.7571 15.9065 15.4363 17.0951 16.6249C18.2837 17.8135 18.878 19.4267 18.878 21.4643C18.878 23.1057 18.4818 24.5915 17.6894 25.9216C16.897 27.2517 15.765 28.2988 14.2934 29.0629C12.8218 29.7988 11.1237 30.1667 9.19931 30.1667C7.47299 30.1667 5.88817 29.8554 4.44485 29.2327C3.00153 28.5818 1.74216 27.6196 0.666748 26.3461L3.00153 24.1811C3.93544 25.1433 4.8835 25.8509 5.84572 26.3037C6.83623 26.7565 7.91164 26.9829 9.07196 26.9829C10.8549 26.9829 12.2558 26.4876 13.2746 25.4971C14.2934 24.4783 14.8028 23.1199 14.8028 21.4218C14.8028 19.554 14.3217 18.2381 13.3595 17.4739C12.3973 16.7098 10.9964 16.3278 9.15686 16.3278H7.03433L7.50129 13.3138H8.94461C10.4162 13.3138 11.6331 12.8751 12.5954 11.9978C13.5859 11.1205 14.0811 9.88945 14.0811 8.30463C14.0811 6.97451 13.6566 5.9274 12.8076 5.16328C11.9586 4.37087 10.8124 3.97467 9.36911 3.97467C8.2654 3.97467 7.24658 4.17277 6.31267 4.56898C5.40706 4.96518 4.47315 5.61609 3.51094 6.5217L1.47331 4.18692C3.87884 1.95119 6.58153 0.833328 9.58136 0.833328Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                        <div class="enumeration__text">
+                                            Влияние трендов, изменения в правилах работы Wildberries и Ozon, акции и
+                                            скидки сразу отображаются в наших данных
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- --------------- Блок Аналитика --------------- -->
+            <section class="analytics">
+                <div class="custom-container">
+                    <div class="container-fluid">
+                        <div class="analytics__row row">
+                            <div class="analytics__list list col-xxl-4">
+                                <div class="list__title">Внешняя аналитика</div>
+                                <ul class="nav nav-pills list__nav d-flex flex-nowrap align-items-center d-xxl-block"
+                                    id="myTab" role="tablist">
+                                    <li class="list__item">
+                                        <a class="list__link active" id="plugin-tab" data-toggle="tab" href="#plugin"
+                                            role="tab" aria-controls="plugin" aria-selected="true">Плагин для сайта
+                                            wildberries</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="analysis-tab" data-toggle="tab" href="#analysis"
+                                            role="tab" aria-controls="analysis" aria-selected="false">Анализ
+                                            конкурента</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="fluctuations-tab" data-toggle="tab"
+                                            href="#fluctuations" role="tab" aria-controls="fluctuations"
+                                            aria-selected="false">Сезонные
+                                            колебания</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="trends-tab" data-toggle="tab" href="#trends"
+                                            role="tab" aria-controls="trends" aria-selected="false">Тренды</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="potential-tab" data-toggle="tab" href="#potential"
+                                            role="tab" aria-controls="potential" aria-selected="false">Потенциал ниши и
+                                            товара</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="top-tab" data-toggle="tab" href="#top" role="tab"
+                                            aria-controls="top" aria-selected="false">Топы продаж</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="history-tab" data-toggle="tab" href="#history"
+                                            role="tab" aria-controls="history" aria-selected="false">История продаж</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="analysis2-tab" data-toggle="tab" href="#analysis2"
+                                            role="tab" aria-controls="analysis2" aria-selected="false">Анализ бренда</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="traking-tab" data-toggle="tab" href="#traking"
+                                            role="tab" aria-controls="traking" aria-selected="false">Отслеживание
+                                            продаж</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="position-tab" data-toggle="tab" href="#position"
+                                            role="tab" aria-controls="position" aria-selected="false">Позиция товара</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="treking2-tab" data-toggle="tab" href="#treking2"
+                                            role="tab" aria-controls="treking2" aria-selected="false">Отслеживание
+                                            цен</a>
+                                    </li>
+                                </ul>
+
+                                <div class="list__title">Внутренняя аналитика</div>
+                                <ul class="nav nav-pills list__nav d-flex flex-nowrap align-items-center d-xxl-block"
+                                    id="myTab2" role="tablist">
+                                    <li class="list__item">
+                                        <a class="list__link" id="delivery-tab" data-toggle="tab" href="#delivery"
+                                            role="tab" aria-controls="delivery" aria-selected="false">Расчет
+                                            поставки</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="abc-tab" data-toggle="tab" href="#abc" role="tab"
+                                            aria-controls="abc" aria-selected="false">ABC анализ</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="profitability-tab" data-toggle="tab"
+                                            href="#profitability" role="tab" aria-controls="profitability"
+                                            aria-selected="false">Оценка рентабельности</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="procent-tab" data-toggle="tab" href="#procent"
+                                            role="tab" aria-controls="procent" aria-selected="false">Процент выкупа</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a class="list__link" id="metrics-tab" data-toggle="tab" href="#metrics"
+                                            role="tab" aria-controls="metrics" aria-selected="false">Аналитику
+                                            бизнес-метрики</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="analytics__description description col-xxl">
+                                <div class="description__content">
+                                    <div class="description__title">Что умеет сервис?</div>
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="plugin" role="tabpanel"
+                                            aria-labelledby="plugin-tab">
+                                            <div class="description__subtitle">Сезонные колебания</div>
+                                            <div class="description__image">
+                                                <img src="media/img/service.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="analysis" role="tabpanel"
+                                            aria-labelledby="analysis-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="fluctuations" role="tabpanel"
+                                            aria-labelledby="fluctuations-tab">
+                                            <div class="description__subtitle">Сезонные колебания</div>
+                                            <div class="description__image">
+                                                <img src="media/img/service.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="trends" role="tabpanel"
+                                            aria-labelledby="trends-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="potential" role="tabpanel"
+                                            aria-labelledby="potential-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="top" role="tabpanel" aria-labelledby="top-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="history" role="tabpanel"
+                                            aria-labelledby="history-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="analysis2" role="tabpanel"
+                                            aria-labelledby="analysis2-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="traking" role="tabpanel"
+                                            aria-labelledby="traking-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="position" role="tabpanel"
+                                            aria-labelledby="position-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="treking2" role="tabpanel"
+                                            aria-labelledby="treking2-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="delivery" role="tabpanel"
+                                            aria-labelledby="delivery-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="abc" role="tabpanel" aria-labelledby="abc-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profitability" role="tabpanel"
+                                            aria-labelledby="profitability-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="procent" role="tabpanel"
+                                            aria-labelledby="procent-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="metrics" role="tabpanel"
+                                            aria-labelledby="metrics-tab">
+                                            <div class="description__subtitle"></div>
+                                            <div class="description__image"></div>
+                                        </div>
+                                    </div>
+
+                                    <a href="request.html" target="_blank" class="description__btn">Попробовать
+                                        бесплатно</a>
+                                    <div class="description__info">Получите бесплатный доступ на 24 часа</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------------- блок ТОП-5 ------------------------ -->
+            <section class="rating">
+                <div class="custom-container">
+                    <div class="container-fluid">
+                        <div class="rating__row row">
+
+                            <div class="rating__col col-xxl">
+                                <div class="rating__content">
+                                    <div class="rating__title">Топ 5 селлеров</div>
+                                    <div class="rating__info">Продаж в месяц</div>
+
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span class="first">01.</span>
+                                            <span>0</span>
+                                        </div>
+                                        <div class="rating-item__name">ООО Вайлдберриз</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>15</span> <span>260</span>
+                                                <span>284</span>
+                                                090
+                                            </div>
+                                            <svg width="9" height="8" viewbox="0 0 9 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01229 8L0.265625 7.25333L6.45229 1.06667H2.93229V0H8.26562V5.33333H7.19896V1.81333L1.01229 8Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span>02.</span>
+                                            <span class="minus">-2</span>
+                                        </div>
+                                        <div class="rating-item__name">АО Мэлон Фэшн Груп</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>2</span> <span>148</span>
+                                                <span>348</span>604
+                                            </div>
+                                            <svg width="8" height="8" viewbox="0 0 8 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.25333 0L8 0.746666L1.81333 6.93333H5.33333V8H0V2.66667H1.06667V6.18667L7.25333 0Z"
+                                                    fill="#E35B63" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span>03.</span>
+                                            <span class="plus">+3</span>
+                                        </div>
+                                        <div class="rating-item__name">ООО Мптрэйд</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>862</span> <span>840</span> 231
+                                            </div>
+                                            <svg width="9" height="8" viewbox="0 0 9 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01229 8L0.265625 7.25333L6.45229 1.06667H2.93229V0H8.26562V5.33333H7.19896V1.81333L1.01229 8Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span>04.</span>
+                                            <span class="plus">+4</span>
+                                        </div>
+                                        <div class="rating-item__name">ООО Кари</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>812</span> <span>602</span> 647
+                                            </div>
+                                            <svg width="9" height="8" viewbox="0 0 9 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01229 8L0.265625 7.25333L6.45229 1.06667H2.93229V0H8.26562V5.33333H7.19896V1.81333L1.01229 8Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span>05.</span>
+                                            <span class="minus">-1</span>
+                                        </div>
+                                        <div class="rating-item__name">АО Глория Джинс</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>810</span> <span>386</span>446
+                                            </div>
+                                            <svg width="8" height="8" viewbox="0 0 8 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.25333 0L8 0.746666L1.81333 6.93333H5.33333V8H0V2.66667H1.06667V6.18667L7.25333 0Z"
+                                                    fill="#E35B63" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rating__col col-xxl">
+                                <div class="rating__content">
+                                    <div class="rating__title">Топ 5 брендов</div>
+                                    <div class="rating__info">Продаж в месяц</div>
+
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span class="first">01.</span>
+                                            <span>0</span>
+                                        </div>
+                                        <div class="rating-item__name">Xiaomi</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>15</span> <span>260</span>
+                                                <span>284</span>
+                                                090
+                                            </div>
+                                            <svg width="9" height="8" viewbox="0 0 9 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01229 8L0.265625 7.25333L6.45229 1.06667H2.93229V0H8.26562V5.33333H7.19896V1.81333L1.01229 8Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span>02.</span>
+                                            <span class="minus">-2</span>
+                                        </div>
+                                        <div class="rating-item__name">adidas</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>2</span> <span>148</span>
+                                                <span>348</span>604
+                                            </div>
+                                            <svg width="8" height="8" viewbox="0 0 8 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.25333 0L8 0.746666L1.81333 6.93333H5.33333V8H0V2.66667H1.06667V6.18667L7.25333 0Z"
+                                                    fill="#E35B63" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span>03.</span>
+                                            <span class="plus">+3</span>
+                                        </div>
+                                        <div class="rating-item__name">Gloria Jeans</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>862</span> <span>840</span> 231
+                                            </div>
+                                            <svg width="9" height="8" viewbox="0 0 9 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01229 8L0.265625 7.25333L6.45229 1.06667H2.93229V0H8.26562V5.33333H7.19896V1.81333L1.01229 8Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span>04.</span>
+                                            <span class="plus">+4</span>
+                                        </div>
+                                        <div class="rating-item__name">ZARINA</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>812</span> <span>602</span> 647
+                                            </div>
+                                            <svg width="9" height="8" viewbox="0 0 9 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01229 8L0.265625 7.25333L6.45229 1.06667H2.93229V0H8.26562V5.33333H7.19896V1.81333L1.01229 8Z"
+                                                    fill="#38AC5A" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__item rating-item d-flex align-items-center">
+                                        <div class="rating-item__number d-flex flex-column">
+                                            <span>05.</span>
+                                            <span class="minus">-1</span>
+                                        </div>
+                                        <div class="rating-item__name">ТВОЕ</div>
+                                        <div class="rating-item__sales d-flex align-items-center">
+                                            <div class="rating-item__count"><span>810</span> <span>386</span>446
+                                            </div>
+                                            <svg width="8" height="8" viewbox="0 0 8 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.25333 0L8 0.746666L1.81333 6.93333H5.33333V8H0V2.66667H1.06667V6.18667L7.25333 0Z"
+                                                    fill="#E35B63" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- Блок Преимущества -------------- -->
+            <section class="benefits">
+                <div class="custom-container">
+                    <div class="benefits__title">
+                        Преимущества
+                    </div>
+                    <div
+                        class="benefits__arrow-prev d-none d-md-flex d-xxl-none align-items-center justify-content-center">
+                        <svg width="17" height="16" viewbox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM17 9H1V7H17V9Z" />
+                        </svg>
+                    </div>
+                    <div
+                        class="benefits__arrow-next d-none d-md-flex d-xxl-none align-items-center justify-content-center">
+                        <svg width="17" height="16" viewbox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="benefits__row d-flex">
+                    <div class="benefits__item d-flex flex-column">
+                        <div class="benefits__item-icon">
+                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 24C10.34 24 8.78 23.6848 7.32 23.0544C5.86 22.4248 4.59 21.57 3.51 20.49C2.43 19.41 1.5752 18.14 0.9456 16.68C0.3152 15.22 0 13.66 0 12C0 10.34 0.3152 8.78 0.9456 7.32C1.5752 5.86 2.43 4.59 3.51 3.51C4.59 2.43 5.86 1.5748 7.32 0.9444C8.78 0.3148 10.34 0 12 0C13.3 0 14.53 0.19 15.69 0.57C16.85 0.95 17.92 1.48 18.9 2.16L17.16 3.93C16.4 3.45 15.59 3.0748 14.73 2.8044C13.87 2.5348 12.96 2.4 12 2.4C9.34 2.4 7.0752 3.3348 5.2056 5.2044C3.3352 7.0748 2.4 9.34 2.4 12C2.4 14.66 3.3352 16.9252 5.2056 18.7956C7.0752 20.6652 9.34 21.6 12 21.6C14.66 21.6 16.9252 20.6652 18.7956 18.7956C20.6652 16.9252 21.6 14.66 21.6 12C21.6 11.64 21.58 11.28 21.54 10.92C21.5 10.56 21.44 10.21 21.36 9.87L23.31 7.92C23.53 8.56 23.7 9.22 23.82 9.9C23.94 10.58 24 11.28 24 12C24 13.66 23.6848 15.22 23.0544 16.68C22.4248 18.14 21.57 19.41 20.49 20.49C19.41 21.57 18.14 22.4248 16.68 23.0544C15.22 23.6848 13.66 24 12 24ZM10.32 17.52L5.22 12.42L6.9 10.74L10.32 14.16L22.32 2.13L24 3.81L10.32 17.52Z"
+                                    fill="url(#paint0_linear_122_1848)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_122_1848" x1="1.9544" y1="12" x2="23.308"
+                                        y2="12.267" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="benefits__item-title">Самый долгий* период сбора данных, что позволяет учитывать
+                            сезонные колебания и всплески</div>
+                        <div class="benefits__item-text">
+                            *продолжительность сбора данных с 01.02.2020
+                        </div>
+                    </div>
+                    <div class="benefits__item d-flex flex-column">
+                        <div class="benefits__item-icon">
+                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 24C10.34 24 8.78 23.6848 7.32 23.0544C5.86 22.4248 4.59 21.57 3.51 20.49C2.43 19.41 1.5752 18.14 0.9456 16.68C0.3152 15.22 0 13.66 0 12C0 10.34 0.3152 8.78 0.9456 7.32C1.5752 5.86 2.43 4.59 3.51 3.51C4.59 2.43 5.86 1.5748 7.32 0.9444C8.78 0.3148 10.34 0 12 0C13.3 0 14.53 0.19 15.69 0.57C16.85 0.95 17.92 1.48 18.9 2.16L17.16 3.93C16.4 3.45 15.59 3.0748 14.73 2.8044C13.87 2.5348 12.96 2.4 12 2.4C9.34 2.4 7.0752 3.3348 5.2056 5.2044C3.3352 7.0748 2.4 9.34 2.4 12C2.4 14.66 3.3352 16.9252 5.2056 18.7956C7.0752 20.6652 9.34 21.6 12 21.6C14.66 21.6 16.9252 20.6652 18.7956 18.7956C20.6652 16.9252 21.6 14.66 21.6 12C21.6 11.64 21.58 11.28 21.54 10.92C21.5 10.56 21.44 10.21 21.36 9.87L23.31 7.92C23.53 8.56 23.7 9.22 23.82 9.9C23.94 10.58 24 11.28 24 12C24 13.66 23.6848 15.22 23.0544 16.68C22.4248 18.14 21.57 19.41 20.49 20.49C19.41 21.57 18.14 22.4248 16.68 23.0544C15.22 23.6848 13.66 24 12 24ZM10.32 17.52L5.22 12.42L6.9 10.74L10.32 14.16L22.32 2.13L24 3.81L10.32 17.52Z"
+                                    fill="url(#paint0_linear_122_1848)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_122_1848" x1="1.9544" y1="12" x2="23.308"
+                                        y2="12.267" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="benefits__item-title">Оперативное реагирование на изменения в работе Wildberries и
+                            Ozon</div>
+                        <div class="benefits__item-marketplaces">
+                            <img src="media/icon/ozon&wildberries.png" alt="">
+                        </div>
+                    </div>
+                    <div class="benefits__item d-flex flex-column">
+                        <div class="benefits__item-icon">
+                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 24C10.34 24 8.78 23.6848 7.32 23.0544C5.86 22.4248 4.59 21.57 3.51 20.49C2.43 19.41 1.5752 18.14 0.9456 16.68C0.3152 15.22 0 13.66 0 12C0 10.34 0.3152 8.78 0.9456 7.32C1.5752 5.86 2.43 4.59 3.51 3.51C4.59 2.43 5.86 1.5748 7.32 0.9444C8.78 0.3148 10.34 0 12 0C13.3 0 14.53 0.19 15.69 0.57C16.85 0.95 17.92 1.48 18.9 2.16L17.16 3.93C16.4 3.45 15.59 3.0748 14.73 2.8044C13.87 2.5348 12.96 2.4 12 2.4C9.34 2.4 7.0752 3.3348 5.2056 5.2044C3.3352 7.0748 2.4 9.34 2.4 12C2.4 14.66 3.3352 16.9252 5.2056 18.7956C7.0752 20.6652 9.34 21.6 12 21.6C14.66 21.6 16.9252 20.6652 18.7956 18.7956C20.6652 16.9252 21.6 14.66 21.6 12C21.6 11.64 21.58 11.28 21.54 10.92C21.5 10.56 21.44 10.21 21.36 9.87L23.31 7.92C23.53 8.56 23.7 9.22 23.82 9.9C23.94 10.58 24 11.28 24 12C24 13.66 23.6848 15.22 23.0544 16.68C22.4248 18.14 21.57 19.41 20.49 20.49C19.41 21.57 18.14 22.4248 16.68 23.0544C15.22 23.6848 13.66 24 12 24ZM10.32 17.52L5.22 12.42L6.9 10.74L10.32 14.16L22.32 2.13L24 3.81L10.32 17.52Z"
+                                    fill="url(#paint0_linear_122_1848)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_122_1848" x1="1.9544" y1="12" x2="23.308"
+                                        y2="12.267" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="benefits__item-title">Уникальный алгоритм сбора данных
+                            с точностью более 90% </div>
+                    </div>
+                    <div class="benefits__item d-flex flex-column">
+                        <div class="benefits__item-icon">
+                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 24C10.34 24 8.78 23.6848 7.32 23.0544C5.86 22.4248 4.59 21.57 3.51 20.49C2.43 19.41 1.5752 18.14 0.9456 16.68C0.3152 15.22 0 13.66 0 12C0 10.34 0.3152 8.78 0.9456 7.32C1.5752 5.86 2.43 4.59 3.51 3.51C4.59 2.43 5.86 1.5748 7.32 0.9444C8.78 0.3148 10.34 0 12 0C13.3 0 14.53 0.19 15.69 0.57C16.85 0.95 17.92 1.48 18.9 2.16L17.16 3.93C16.4 3.45 15.59 3.0748 14.73 2.8044C13.87 2.5348 12.96 2.4 12 2.4C9.34 2.4 7.0752 3.3348 5.2056 5.2044C3.3352 7.0748 2.4 9.34 2.4 12C2.4 14.66 3.3352 16.9252 5.2056 18.7956C7.0752 20.6652 9.34 21.6 12 21.6C14.66 21.6 16.9252 20.6652 18.7956 18.7956C20.6652 16.9252 21.6 14.66 21.6 12C21.6 11.64 21.58 11.28 21.54 10.92C21.5 10.56 21.44 10.21 21.36 9.87L23.31 7.92C23.53 8.56 23.7 9.22 23.82 9.9C23.94 10.58 24 11.28 24 12C24 13.66 23.6848 15.22 23.0544 16.68C22.4248 18.14 21.57 19.41 20.49 20.49C19.41 21.57 18.14 22.4248 16.68 23.0544C15.22 23.6848 13.66 24 12 24ZM10.32 17.52L5.22 12.42L6.9 10.74L10.32 14.16L22.32 2.13L24 3.81L10.32 17.52Z"
+                                    fill="url(#paint0_linear_122_1848)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_122_1848" x1="1.9544" y1="12" x2="23.308"
+                                        y2="12.267" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="benefits__item-title">Клиентская поддержка на всех этапах работы с сервисом</div>
+                    </div>
+                    <div class="benefits__item d-flex flex-column">
+                        <div class="benefits__item-icon">
+                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 24C10.34 24 8.78 23.6848 7.32 23.0544C5.86 22.4248 4.59 21.57 3.51 20.49C2.43 19.41 1.5752 18.14 0.9456 16.68C0.3152 15.22 0 13.66 0 12C0 10.34 0.3152 8.78 0.9456 7.32C1.5752 5.86 2.43 4.59 3.51 3.51C4.59 2.43 5.86 1.5748 7.32 0.9444C8.78 0.3148 10.34 0 12 0C13.3 0 14.53 0.19 15.69 0.57C16.85 0.95 17.92 1.48 18.9 2.16L17.16 3.93C16.4 3.45 15.59 3.0748 14.73 2.8044C13.87 2.5348 12.96 2.4 12 2.4C9.34 2.4 7.0752 3.3348 5.2056 5.2044C3.3352 7.0748 2.4 9.34 2.4 12C2.4 14.66 3.3352 16.9252 5.2056 18.7956C7.0752 20.6652 9.34 21.6 12 21.6C14.66 21.6 16.9252 20.6652 18.7956 18.7956C20.6652 16.9252 21.6 14.66 21.6 12C21.6 11.64 21.58 11.28 21.54 10.92C21.5 10.56 21.44 10.21 21.36 9.87L23.31 7.92C23.53 8.56 23.7 9.22 23.82 9.9C23.94 10.58 24 11.28 24 12C24 13.66 23.6848 15.22 23.0544 16.68C22.4248 18.14 21.57 19.41 20.49 20.49C19.41 21.57 18.14 22.4248 16.68 23.0544C15.22 23.6848 13.66 24 12 24ZM10.32 17.52L5.22 12.42L6.9 10.74L10.32 14.16L22.32 2.13L24 3.81L10.32 17.52Z"
+                                    fill="url(#paint0_linear_122_1848)" />
+                                <defs>
+                                    <lineargradient id="paint0_linear_122_1848" x1="1.9544" y1="12" x2="23.308"
+                                        y2="12.267" gradientunits="userSpaceOnUse">
+                                        <stop stop-color="#9399FF" />
+                                        <stop offset="0.40625" stop-color="#6C99FF" />
+                                        <stop offset="1" stop-color="#18C0FF" />
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="benefits__item-title">Управление своими продажами и внешняя аналитика в одном
+                            сервисе
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- Блок Тарифы -------------------- -->
+            <section class="tariffs">
+                <div class="custom-container">
+                    <div class="tariffs__title">
+                        Тарифы на использование сервиса
+                    </div>
+                    <div class="tariffs__date d-flex align-items-center flex-wrap">
+                        <!-- добавить класс active при выборе -->
+                        <div class="tariffs__date-item d-flex align-items-center active">1 месяц</div>
+                        <div class="tariffs__date-item d-flex align-items-center">3 месяца
+                            <div class="tariffs__procents">-10%</div>
+                        </div>
+                        <div class="tariffs__date-item d-flex align-items-center">6 месяцев
+                            <div class="tariffs__procents">-20%</div>
+                        </div>
+                        <div class="tariffs__date-item d-flex align-items-center">12 месяцев
+                            <div class="tariffs__procents">-30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariffs__row d-flex">
+                    <div class="tariffs__item d-flex flex-column">
+                        <div class="tariffs__item-title">Бесплатный</div>
+                        <div class="tariffs__item-price">0 ₽</div>
+                        <div class="tariffs__item-text">
+                            <div class="tariffs__item-label">Точный анализ собственных продаж на Wildberries </div>
+                        </div>
+                        <button class="tariffs__item-btn tariffs__item-btn_white">Попробовать</button>
+                    </div>
+                    <div class="tariffs__item d-flex flex-column">
+                        <div class="tariffs__item-title">Базовый</div>
+                        <div class="tariffs__item-price">4 800 ₽</div>
+                        <div class="tariffs__item-text">
+                            <div class="tariffs__item-label">Личный кабинет с прогнозом поставок, АBС анализом и
+                                расчетом
+                                маржинальности</div>
+                            <div class="tariffs__item-label">Динамика продаж, цен, остатков конкурентов на WB за
+                                последние
+                                7
+                                дней</div>
+                        </div>
+                        <button class="tariffs__item-btn">Купить</button>
+                    </div>
+                    <div class="tariffs__item d-flex flex-column">
+                        <div class="tariffs__item-title">Расширенный</div>
+                        <div class="tariffs__item-price">20 000 ₽</div>
+                        <div class="tariffs__item-text">
+                            <div class="tariffs__item-label">Выбор ниши для расширения товарной матрицы</div>
+                            <div class="tariffs__item-label">SЕО оптимизация для повышения позиции в поисковой выдаче
+                            </div>
+                            <div class="tariffs__item-label">Полный набор инструментов для анализа конкурентов на OZON
+                            </div>
+                            <div class="tariffs__item-label">Полный набор инструментов для анализа конкурентов на OZON
+                            </div>
+                        </div>
+                        <button class="tariffs__item-btn">Купить</button>
+                    </div>
+                    <div class="tariffs__item tariffs__item_special d-flex flex-column">
+                        <div class="tariffs__item-title">Профи</div>
+                        <div class="tariffs__item-price">30 000 ₽</div>
+                        <div class="tariffs__item-text">
+                            <div class="tariffs__item-label">Глубокая внешняя аналитика для анализа конкурентов на WB и
+                                OZON
+                            </div>
+                            <div class="tariffs__item-label">Инструменты искусственного интеллекта для прогноза выручки
+                            </div>
+                            <div class="tariffs__item-label">Проверка рекламной ставки для экономии бюджета на рекламу
+                            </div>
+                            <div class="tariffs__item-label">Персональный менеджер</div>
+                        </div>
+                        <button class="tariffs__item-btn tariffs__item-btn_white-border">Купить</button>
+                    </div>
+                    <div class="tariffs__item d-flex flex-column">
+                        <div class="tariffs__item-title">Корпоративный</div>
+                        <div class="tariffs__item-price">80 000 ₽</div>
+                        <div class="tariffs__item-text">
+                            <div class="tariffs__item-label">Подробная внешняя, внутренняя аналитика и инструменты SEO
+                                для
+                                работы в команде</div>
+                            <div class="tariffs__item-label">Одновременный доступ к сервису до пяти пользователей</div>
+                            <div class="tariffs__item-label">Окно выборки данныхне ограничено</div>
+                            <div class="tariffs__item-label">Оценка успеха конкурентов на основе анализа характеристик
+                                карточек
+                                товаров</div>
+                        </div>
+                        <button class="tariffs__item-btn">Купить</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- Блок Отзывы -------------- -->
+            <section class="feedback">
+                <div class="custom-container">
+                    <div class="feedback__title">
+                        <span>Отзывы</span> клиентов
+                    </div>
+                </div>
+                <div class="feedback__row d-flex ">
+                    <div class="feedback__item d-flex flex-column align-items-center">
+                        <p class="feedback__text">Пришли с запросом оценки собственных продаж на OZON Ритейл
+                            После подробной оценки функционала поняли, что можем опираться на MPStats как на
+                            аналитический тул продаж маркетплейсов по нам и конкурентам...</p>
+                        <div class="feedback__autor">Илона Викторова</div>
+                        <div
+                            class="feedback__contacts d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap">
+                            <div class="feedback__city">Москва</div>
+                            <div class="feedback__label">Оценил наше обучение на</div>
+                            <div class="feedback__grade d-flex align-items-center">
+                                <svg width="21" height="19" viewbox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 15.27L16.68 19L15.04 11.97L20.5 7.24L13.31 6.63L10.5 0L7.69 6.63L0.5 7.24L5.96 11.97L4.32 19L10.5 15.27Z"
+                                        fill="url(#paint0_linear_1920_3995)" />
+                                    <defs>
+                                        <lineargradient id="paint0_linear_1920_3995" x1="0.5" y1="9.5" x2="20.4742"
+                                            y2="11.8128" gradientunits="userSpaceOnUse">
+                                            <stop stop-color="#38AC5A" />
+                                            <stop offset="0.994792" stop-color="#89CC5A" />
+                                        </lineargradient>
+                                    </defs>
+                                </svg>
+                                <span>Отлично!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item d-flex flex-column align-items-center">
+                        <p class="feedback__text">Пришли с запросом оценки собственных продаж на OZON Ритейл
+                            После подробной оценки функционала поняли, что можем опираться на MPStats как на
+                            аналитический тул продаж маркетплейсов по нам и конкурентам...</p>
+                        <div class="feedback__autor">Илона Викторова</div>
+                        <div
+                            class="feedback__contacts d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap">
+                            <div class="feedback__city">Москва</div>
+                            <div class="feedback__label">Оценил наше обучение на</div>
+                            <div class="feedback__grade d-flex align-items-center">
+                                <svg width="21" height="19" viewbox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 15.27L16.68 19L15.04 11.97L20.5 7.24L13.31 6.63L10.5 0L7.69 6.63L0.5 7.24L5.96 11.97L4.32 19L10.5 15.27Z"
+                                        fill="url(#paint0_linear_1920_3995)" />
+                                    <defs>
+                                        <lineargradient id="paint0_linear_1920_3995" x1="0.5" y1="9.5" x2="20.4742"
+                                            y2="11.8128" gradientunits="userSpaceOnUse">
+                                            <stop stop-color="#38AC5A" />
+                                            <stop offset="0.994792" stop-color="#89CC5A" />
+                                        </lineargradient>
+                                    </defs>
+                                </svg>
+                                <span>Отлично!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item d-flex flex-column align-items-center">
+                        <p class="feedback__text">Пришли с запросом оценки собственных продаж на OZON Ритейл
+                            После подробной оценки функционала поняли, что можем опираться на MPStats как на
+                            аналитический тул продаж маркетплейсов по нам и конкурентам...</p>
+                        <div class="feedback__autor">Илона Викторова</div>
+                        <div
+                            class="feedback__contacts d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap">
+                            <div class="feedback__city">Москва</div>
+                            <div class="feedback__label">Оценил наше обучение на</div>
+                            <div class="feedback__grade d-flex align-items-center">
+                                <svg width="21" height="19" viewbox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 15.27L16.68 19L15.04 11.97L20.5 7.24L13.31 6.63L10.5 0L7.69 6.63L0.5 7.24L5.96 11.97L4.32 19L10.5 15.27Z"
+                                        fill="url(#paint0_linear_1920_3995)" />
+                                    <defs>
+                                        <lineargradient id="paint0_linear_1920_3995" x1="0.5" y1="9.5" x2="20.4742"
+                                            y2="11.8128" gradientunits="userSpaceOnUse">
+                                            <stop stop-color="#38AC5A" />
+                                            <stop offset="0.994792" stop-color="#89CC5A" />
+                                        </lineargradient>
+                                    </defs>
+                                </svg>
+                                <span>Отлично!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item d-flex flex-column align-items-center">
+                        <p class="feedback__text">Пришли с запросом оценки собственных продаж на OZON Ритейл
+                            После подробной оценки функционала поняли, что можем опираться на MPStats как на
+                            аналитический тул продаж маркетплейсов по нам и конкурентам...</p>
+                        <div class="feedback__autor">Илона Викторова</div>
+                        <div
+                            class="feedback__contacts d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap">
+                            <div class="feedback__city">Москва</div>
+                            <div class="feedback__label">Оценил наше обучение на</div>
+                            <div class="feedback__grade d-flex align-items-center">
+                                <svg width="21" height="19" viewbox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 15.27L16.68 19L15.04 11.97L20.5 7.24L13.31 6.63L10.5 0L7.69 6.63L0.5 7.24L5.96 11.97L4.32 19L10.5 15.27Z"
+                                        fill="url(#paint0_linear_1920_3995)" />
+                                    <defs>
+                                        <lineargradient id="paint0_linear_1920_3995" x1="0.5" y1="9.5" x2="20.4742"
+                                            y2="11.8128" gradientunits="userSpaceOnUse">
+                                            <stop stop-color="#38AC5A" />
+                                            <stop offset="0.994792" stop-color="#89CC5A" />
+                                        </lineargradient>
+                                    </defs>
+                                </svg>
+                                <span>Отлично!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item d-flex flex-column align-items-center">
+                        <p class="feedback__text">Пришли с запросом оценки собственных продаж на OZON Ритейл
+                            После подробной оценки функционала поняли, что можем опираться на MPStats как на
+                            аналитический тул продаж маркетплейсов по нам и конкурентам...</p>
+                        <div class="feedback__autor">Илона Викторова</div>
+                        <div
+                            class="feedback__contacts d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap">
+                            <div class="feedback__city">Москва</div>
+                            <div class="feedback__label">Оценил наше обучение на</div>
+                            <div class="feedback__grade d-flex align-items-center">
+                                <svg width="21" height="19" viewbox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 15.27L16.68 19L15.04 11.97L20.5 7.24L13.31 6.63L10.5 0L7.69 6.63L0.5 7.24L5.96 11.97L4.32 19L10.5 15.27Z"
+                                        fill="url(#paint0_linear_1920_3995)" />
+                                    <defs>
+                                        <lineargradient id="paint0_linear_1920_3995" x1="0.5" y1="9.5" x2="20.4742"
+                                            y2="11.8128" gradientunits="userSpaceOnUse">
+                                            <stop stop-color="#38AC5A" />
+                                            <stop offset="0.994792" stop-color="#89CC5A" />
+                                        </lineargradient>
+                                    </defs>
+                                </svg>
+                                <span>Отлично!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- Блок Новости нашего сервиса -------------- -->
+            <section class="news">
+                <div class="custom-container">
+                    <div class="news__title">
+                        Новости нашего сервиса
+                    </div>
+                    <div class="news__subtitle">
+                        Лучше всего за нас говорят наши результаты
+                    </div>
+                    <div class="news__arrow-prev d-none d-xxl-flex align-items-center justify-content-center">
+                        <svg width="17" height="16" viewbox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM17 9H1V7H17V9Z" />
+                        </svg>
+                    </div>
+                    <div class="news__arrow-next d-none d-xxl-flex align-items-center justify-content-center">
+                        <svg width="17" height="16" viewbox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="news__row d-flex flex-column flex-md-row">
+                    <div class="news__slide slide-news d-flex align-items-center flex-md-column align-items-md-start">
+                        <div class="slide-news__image">
+                            <picture>
+                                <source srcset="media/img/news-1.png" media="(min-width: 768px)">
+                                <source srcset="media/img/news-1-small.png" media="(max-width: 768px)">
+                                <img src="media/img/news-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="slide-news__content">
+                            <div class="slide-news__label slide-news__label_green">🥬 Полезная информация</div>
+                            <div class="slide-news__title">Дайджест MPSTATS. #4</div>
+                            <div class="slide-news__text">Селлер, мы выпустили для тебя обновления на сервисе, которые
+                                помогут
+                                завершить год большим количеством продаж 💪
+                            </div>
+                            <a href="#" class="slide-news__btn">Смотреть</a>
+                        </div>
+                    </div>
+                    <div class="news__slide slide-news d-flex align-items-center flex-md-column align-items-md-start">
+                        <div class="slide-news__image">
+                            <picture>
+                                <source srcset="media/img/news-2.png" media="(min-width: 768px)">
+                                <source srcset="media/img/news-2-small.png" media="(max-width: 768px)">
+                                <img src="media/img/news-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="slide-news__content">
+                            <div class="slide-news__label slide-news__label_red">🔥 Важное</div>
+                            <div class="slide-news__title">Розыгрыш билетов</div>
+                            <div class="slide-news__text">Селлер, мы выпустили для тебя обновления на сервисе, которые
+                                помогут
+                                завершить год большим количеством продаж 💪
+                            </div>
+                            <a href="#" class="slide-news__btn">Смотреть</a>
+                        </div>
+                    </div>
+                    <div class="news__slide slide-news d-flex align-items-center flex-md-column align-items-md-start">
+                        <div class="slide-news__image">
+                            <picture>
+                                <source srcset="media/img/news-3.png" media="(min-width: 768px)">
+                                <source srcset="media/img/news-3-small.png" media="(max-width: 768px)">
+                                <img src="media/img/news-3.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="slide-news__content">
+                            <div class="slide-news__label slide-news__label_green">🥬 Полезная информация</div>
+                            <div class="slide-news__title">Volvo Ocean Race</div>
+                            <div class="slide-news__text">Селлер, мы выпустили для тебя обновления на сервисе, которые
+                                помогут
+                                завершить год большим количеством продаж 💪
+                            </div>
+                            <a href="#" class="slide-news__btn">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- Блок Статистика ---------------- -->
+            <section class="statistics">
+                <div class="custom-container">
+                    <div class="container-fluid">
+                        <div class="statistics__row row">
+                            <div
+                                class="statistics__item col-12 col-md-6 col-xxl-3 d-flex align-items-center justify-content-xxl-between">
+                                <div class="statistics__icon">
+                                    <svg width="85" height="39" viewbox="0 0 85 39" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 37.9999L8.62596 29.3795C9.07075 28.8767 9.8748 28.9463 10.2266 29.518L14.4459 36.3746C14.8686 37.0616 15.8889 36.9911 16.2132 36.2525L21.4166 24.4003C21.7262 23.6951 22.6833 23.5898 23.1387 24.2109L25.3755 27.2612C25.7769 27.8085 26.5952 27.8055 26.9926 27.2553L39.2597 10.2699C39.7757 9.55542 40.8966 9.80939 41.0543 10.6765L42.5362 18.8271C42.6762 19.5974 43.6071 19.9152 44.189 19.3915L49.5286 14.5859C49.9365 14.2188 50.5639 14.249 50.9347 14.6534L57.748 22.0861C58.1175 22.4891 58.7422 22.5207 59.1504 22.1569L65.4851 16.512C65.9608 16.0881 66.7063 16.2113 67.0204 16.7656L71.3147 24.3438C71.7188 25.0569 72.7621 25.0077 73.0973 24.2597L83.6026 0.816895"
+                                            stroke="#38AC5A" stroke-width="1.2" />
+                                    </svg>
+                                </div>
+                                <div class="statistics__text">
+                                    <div class="statistics__name">Товаров</div>
+                                    <div class="statistics__number d-flex align-items-end">
+                                        <div class="statistics__numeric">26 466 067</div>
+                                        <svg width="10" height="10" viewbox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.97784 10C4.8121 10 4.65314 9.93416 4.53595 9.81696C4.41875 9.69976 4.35291 9.54081 4.35291 9.37507L4.35291 2.13463L1.67071 4.81808C1.55336 4.93542 1.39421 5.00135 1.22826 5.00135C1.06231 5.00135 0.903153 4.93542 0.785808 4.81808C0.668463 4.70073 0.602539 4.54158 0.602539 4.37563C0.602539 4.20968 0.668463 4.05052 0.785808 3.93318L4.53539 0.183596C4.59344 0.125398 4.6624 0.0792254 4.73832 0.0477207C4.81425 0.0162161 4.89564 -1.87657e-07 4.97784 -1.9125e-07C5.06004 -1.94844e-07 5.14143 0.0162161 5.21735 0.0477207C5.29328 0.0792253 5.36224 0.125398 5.42029 0.183596L9.16987 3.93318C9.28722 4.05052 9.35314 4.20968 9.35314 4.37563C9.35314 4.54158 9.28722 4.70073 9.16987 4.81808C9.05253 4.93542 8.89337 5.00135 8.72742 5.00135C8.56147 5.00135 8.40232 4.93542 8.28497 4.81808L5.60277 2.13463L5.60277 9.37507C5.60277 9.54081 5.53693 9.69976 5.41973 9.81696C5.30254 9.93416 5.14358 10 4.97784 10Z"
+                                                fill="#38AC5A" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="statistics__item col-12 col-md col-xxl d-flex align-items-center justify-content-xxl-between">
+                                <div class="statistics__icon">
+                                    <svg width="87" height="45" viewbox="0 0 87 45" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 43.6579L37.5932 20.175C37.8683 19.9985 38.2122 19.9675 38.5143 20.0921L50.8542 25.1771C51.1656 25.3054 51.5207 25.2683 51.7989 25.0784L86.5755 1.34204"
+                                            stroke="#38AC5A" stroke-width="1.2" />
+                                    </svg>
+                                </div>
+                                <div class="statistics__text">
+                                    <div class="statistics__name">Брендов</div>
+                                    <div class="statistics__number d-flex align-items-end">
+                                        <div class="statistics__numeric">246 912</div>
+                                        <svg width="10" height="10" viewbox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.97784 10C4.8121 10 4.65314 9.93416 4.53595 9.81696C4.41875 9.69976 4.35291 9.54081 4.35291 9.37507L4.35291 2.13463L1.67071 4.81808C1.55336 4.93542 1.39421 5.00135 1.22826 5.00135C1.06231 5.00135 0.903153 4.93542 0.785808 4.81808C0.668463 4.70073 0.602539 4.54158 0.602539 4.37563C0.602539 4.20968 0.668463 4.05052 0.785808 3.93318L4.53539 0.183596C4.59344 0.125398 4.6624 0.0792254 4.73832 0.0477207C4.81425 0.0162161 4.89564 -1.87657e-07 4.97784 -1.9125e-07C5.06004 -1.94844e-07 5.14143 0.0162161 5.21735 0.0477207C5.29328 0.0792253 5.36224 0.125398 5.42029 0.183596L9.16987 3.93318C9.28722 4.05052 9.35314 4.20968 9.35314 4.37563C9.35314 4.54158 9.28722 4.70073 9.16987 4.81808C9.05253 4.93542 8.89337 5.00135 8.72742 5.00135C8.56147 5.00135 8.40232 4.93542 8.28497 4.81808L5.60277 2.13463L5.60277 9.37507C5.60277 9.54081 5.53693 9.69976 5.41973 9.81696C5.30254 9.93416 5.14358 10 4.97784 10Z"
+                                                fill="#38AC5A" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="statistics__item col-12 col-md-6 col-xxl-3 d-flex align-items-center justify-content-xxl-between">
+                                <div class="statistics__icon">
+                                    <svg width="88" height="44" viewbox="0 0 88 44" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 42.4629H7.38584H13.7929C14.1897 42.4629 14.549 42.2282 14.7086 41.8649L20.4166 28.8632C20.7262 28.158 21.6832 28.0528 22.1387 28.6738L24.3755 31.7241C24.7769 32.2714 25.5952 32.2684 25.9926 31.7182L38.2597 14.7328C38.7757 14.0183 39.8966 14.2723 40.0543 15.1394L41.5362 23.29C41.6762 24.0603 42.6071 24.3781 43.189 23.8544L48.5286 19.0488C48.9364 18.6817 49.5639 18.7119 49.9347 19.1163L56.7503 26.5516C57.1189 26.9536 57.7416 26.9862 58.1501 26.6248L87.1113 1"
+                                            stroke="#38AC5A" stroke-width="1.2" />
+                                    </svg>
+                                </div>
+                                <div class="statistics__text">
+                                    <div class="statistics__name">Продаж</div>
+                                    <div class="statistics__number d-flex align-items-end">
+                                        <div class="statistics__numeric">3 145 054</div>
+                                        <svg width="10" height="10" viewbox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.97784 10C4.8121 10 4.65314 9.93416 4.53595 9.81696C4.41875 9.69976 4.35291 9.54081 4.35291 9.37507L4.35291 2.13463L1.67071 4.81808C1.55336 4.93542 1.39421 5.00135 1.22826 5.00135C1.06231 5.00135 0.903153 4.93542 0.785808 4.81808C0.668463 4.70073 0.602539 4.54158 0.602539 4.37563C0.602539 4.20968 0.668463 4.05052 0.785808 3.93318L4.53539 0.183596C4.59344 0.125398 4.6624 0.0792254 4.73832 0.0477207C4.81425 0.0162161 4.89564 -1.87657e-07 4.97784 -1.9125e-07C5.06004 -1.94844e-07 5.14143 0.0162161 5.21735 0.0477207C5.29328 0.0792253 5.36224 0.125398 5.42029 0.183596L9.16987 3.93318C9.28722 4.05052 9.35314 4.20968 9.35314 4.37563C9.35314 4.54158 9.28722 4.70073 9.16987 4.81808C9.05253 4.93542 8.89337 5.00135 8.72742 5.00135C8.56147 5.00135 8.40232 4.93542 8.28497 4.81808L5.60277 2.13463L5.60277 9.37507C5.60277 9.54081 5.53693 9.69976 5.41973 9.81696C5.30254 9.93416 5.14358 10 4.97784 10Z"
+                                                fill="#38AC5A" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="statistics__item col-12 col-md col-xxl d-flex align-items-center justify-content-xxl-between">
+                                <div class="statistics__icon">
+                                    <svg width="84" height="35" viewbox="0 0 84 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 34H11.9419C12.3387 34 12.698 33.7653 12.8575 33.402L18.5656 20.4003C18.8752 19.6951 19.8322 19.5899 20.2876 20.211L22.5244 23.2612C22.9258 23.8085 23.7442 23.8056 24.1415 23.2553L36.4087 6.26995C36.9247 5.55548 38.0456 5.80945 38.2032 6.67656L39.6851 14.8271C39.8252 15.5974 40.756 15.9153 41.338 15.3915L46.6775 10.5859C47.0854 10.2189 47.7129 10.249 48.0836 10.6535L54.8969 18.0861C55.2664 18.4892 55.8911 18.5208 56.2994 18.157L62.634 12.5121C63.1097 12.0882 63.8552 12.2113 64.1693 12.7657L68.0407 19.5974C68.5058 20.4183 69.7446 20.1975 69.8975 19.2665L72.8892 1.05518L82.8664 4.36668"
+                                            stroke="#E35B63" stroke-width="1.2" />
+                                    </svg>
+                                </div>
+                                <div class="statistics__text">
+                                    <div class="statistics__name">Продавцов</div>
+                                    <div class="statistics__number d-flex align-items-end">
+                                        <div class="statistics__numeric">90 416</div>
+                                        <svg width="10" height="10" viewbox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.24176 1.9125e-07C5.07601 1.84006e-07 4.91706 0.065841 4.79986 0.183038C4.68267 0.300235 4.61683 0.459189 4.61683 0.62493L4.61683 7.86537L1.93463 5.18192C1.81728 5.06458 1.65813 4.99865 1.49217 4.99865C1.32622 4.99865 1.16707 5.06458 1.04972 5.18192C0.932379 5.29927 0.866455 5.45842 0.866455 5.62437C0.866455 5.79032 0.932379 5.94948 1.04972 6.06682L4.79931 9.8164C4.85736 9.8746 4.92632 9.92077 5.00224 9.95228C5.07816 9.98378 5.15956 10 5.24176 10C5.32396 10 5.40535 9.98378 5.48127 9.95228C5.55719 9.92077 5.62616 9.8746 5.68421 9.8164L9.43379 6.06682C9.55113 5.94948 9.61706 5.79032 9.61706 5.62437C9.61706 5.45842 9.55113 5.29927 9.43379 5.18192C9.31644 5.06458 9.15729 4.99865 8.99134 4.99865C8.82539 4.99865 8.66623 5.06458 8.54889 5.18192L5.86669 7.86537L5.86669 0.62493C5.86669 0.459189 5.80085 0.300235 5.68365 0.183038C5.56645 0.065841 5.4075 1.98495e-07 5.24176 1.9125e-07Z"
+                                                fill="#E35B63" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Modal  popup -->
+            <div class="modal fade" id="modalSubscription" tabindex="-1" role="dialog"
+                aria-labelledby="modalSubscriptionTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal__dialog" role="document">
+                    <div class="modal__content">
+                        <button type="button" class="close modal__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <div class="modal__title" id="exampleModalLongTitle"><span>MPSTATS</span> работает<br> по
+                            системе
+                            подписки </div>
+                        <div class="modal__text">
+                            Селлеры разные, поэтому тарифы тоже разные.<br> Ты можешь выбрать и приобрести подписку
+                            самостоятельно, а можешь проконсультироваться с нашим менеджером.
+                        </div>
+                        <div class="container-fluid">
+                            <div class="modal__row row">
+                                <div class="modal__item col-md-6">
+                                    <div class="modal__himself">
+                                        <img src="media/img/phone-popup.png" alt="" id="phone-himself">
+                                        <img src="media/img/green-star.png" alt="" id="green-star-1">
+                                    </div>
+                                    <a href="#" target="_blank" class="modal__link modal__link_himself">Выберу тариф
+                                        сам</a>
+                                </div>
+                                <div class="modal__item col-md">
+                                    <div class="modal__manager">
+                                        <img src="media/img/anatoliy.png" alt="" id="man">
+                                        <img src="media/img/green-star.png" alt="" id="green-star-2">
+                                    </div>
+                                    <a href="manager.html" target="_blank" class="modal__link modal__link_manager">Нужна
+                                        помощь
+                                        менеджера</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="block-footer d-flex flex-column">
+            <div class="top d-flex flex-column flex-xl-row justify-content-xl-between">
+                <div class="left">
+                    <div class="block-1 d-flex align-items-center justify-content-between justify-content-md-start">
+                        <a class="logo" href="/">
+                            <img loading="lazy" src="/public/images/logo/logo-green-white.svg">
+                        </a>
+
+                        <a class="sk" href="https://sk.ru" target="_blank">
+                            <img loading="lazy" src="/i/Sk-White_Участник-block-mono-contur-ru-36.png">
+                        </a>
+                    </div>
+
+                    <div class="block-2">
+                        Система мониторинга цен, продавцов и товаров на Российских маркетплейсах. Всегда свежие и полные
+                        данные на расстоянии одного клика
+                    </div>
+
+                    <div class="block-3">
+                        <div class="title">Контакты</div>
+
+                        <div class="text">
+                            195257, г. Санкт-Петербург, Гражданский пр., д. 100 стр. 1, пом. 8
+                            <br>
+                            <a href="tel:89699991728">+7 (969) 999-17-28</a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href="mailto:info@mpstats.io">info@mpstats.io</a>
+                        </div>
+                    </div>
+
+                    <div class="block-4">
+                        <a href="https://www.youtube.com/c/mpstats" target="_blank">
+                            <img loading="lazy" src="/public/images/v3/youtube-white.svg">
+                        </a>
+                        <a href="https://telegram.me/analyticsmpstats" target="_blank">
+                            <img loading="lazy" src="/public/images/v3/telegram-white.svg">
+                        </a>
+                        <a href="https://vk.com/mpstatsio" target="_blank">
+                            <img loading="lazy" src="/public/images/v3/vk-white.svg">
+                        </a>
+                    </div>
+
+                    <div class="block-5">
+                        <div class="title">
+                            Безналичный расчет
+                            <br class="d-md-none">
+                            для Юрлиц и ИП
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row">
+                            <div class="d-flex">
+                                <img loading="lazy" src="/public/images/v4/payment/visa.svg">
+                                <img loading="lazy" src="/public/images/v4/payment/mastercard.svg">
+                                <img loading="lazy" src="/public/images/v4/payment/sberbank.svg">
+                                <img loading="lazy" src="/public/images/v4/payment/iomoney.svg">
+                            </div>
+
+                            <div class="d-flex">
+                                <img loading="lazy" src="/public/images/v4/payment/mir.svg">
+                                <img loading="lazy" src="/public/images/v4/payment/google-pay.svg">
+                                <img loading="lazy" src="/public/images/v4/payment/samsung-pay.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu d-flex flex-column flex-md-row">
+                    <div class="d-flex flex-column">
+                        <div class="title">Инструменты</div>
+
+                        <ul>
+                            <li><a href="/wb/top-sellers">Рейтинг поставщиков</a></li>
+                            <li><a href="/wb/top-brands">Рейтинг брендов</a></li>
+                            <li><a href="/integrations">API документация</a></li>
+                            <li><a href="/chrome-plugin">Плагин для Google Chrome</a></li>
+                            <li><a href="/calculation">Калькуляторы</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <div class="title">Компания</div>
+
+                        <ul>
+                            <li><a href="/partner">Партнерская программа</a></li>
+                            <li><a href="/tarif">Тарифы</a></li>
+                            <li><a href="/bots">Роботы MPSTATS</a></li>
+                            <li><a href="/vacancy">Вакансии</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom d-xl-flex justify-content-xl-between">
+                <div class="block-1 d-flex flex-column flex-md-row justify-content-between">
+                    <a href="/legal">Пользовательское соглашение</a>
+                    <a href="/policy">Политика оплаты и возврата</a>
+                    <a href="/privacy">Политика конфиденциальности</a>
+                </div>
+
+                <div class="block-2 d-flex justify-content-between">
+                    <div>C <span class="text-danger">❤</span> из Санкт-Петербурга</div>
+
+                    <div>© 2022 ООО «МПСТАТС»</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- скрипты bootstrap для работы вкладок в блоке аналитика и для модалок -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

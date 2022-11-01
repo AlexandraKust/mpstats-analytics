@@ -1,0 +1,381 @@
+@import "base"; // не трогать
+
+// тут стили которые надо сверстать
+
+.custom-container {
+	max-width: 1320px;
+	min-width: 320px;
+	padding: 0 16px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+
+	@media (min-width: 768px) { //>768
+		padding: 0 32px;
+	}
+	@media (min-width: 1320px) {
+		padding: 0 64px;
+	}
+}
+a:hover {
+	cursor: url('../media/icon/Hand-pointing.png'), pointer;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+// --------------- Шапка ---------------
+.header {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url('../media/img/header-bg-mobile.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	padding: 0 0 56px;
+
+	&__content {
+		position: relative;
+		color: #FFFFFF;
+		max-width: 343px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 110%;		
+		letter-spacing: -0.25px;
+		margin-bottom: 16px;
+		width: 200px;
+		padding-top: 112px;
+	}
+
+	&__text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 135%;
+		letter-spacing: 0.25px;
+		width: 284px;
+		margin-bottom: 32px;
+	}
+
+	&__btn {
+		width: 343px;
+		display: inline-block;
+		background: $gray-10;
+		border-radius: 4px;
+		padding: 12.5px 0;
+		text-align: center;
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 140%;		
+		letter-spacing: 0.25px;
+		color: #FFFFFF;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		& img:first-child {
+			top: 75px;
+			right: -95px;	
+			width: 161px;
+			height: 160px;	
+			transform: rotate(-15deg);
+		}
+		& img:nth-child(2) {
+			display: none;
+		}
+		img {
+			width: 100%;
+			position: absolute; 
+		}
+	}
+	&__star {
+		display: none;
+	}
+
+	@media (min-width: 768px) {
+		background-position: center;
+		padding: 0;
+
+		&__content {
+			max-width: 704px;
+		}
+
+		&__title {
+			font-size: 48px;
+			line-height: 105%;
+			letter-spacing: -0.5px;
+			margin-bottom: 24px;
+			width: 100%;
+			padding-top: 125px;
+		}
+		&__text {
+			font-size: 20px;
+			width: 350px;
+			margin-bottom: 60px;
+		}
+
+		&__btn {
+			margin-bottom: 150px;
+			width: fit-content;
+			padding: 21px 98px;
+			font-size: 20px;
+		}
+
+		&__image {
+			& img:first-child {
+				filter: opacity(0.5);
+				top: 162px;
+				right: -75px;	
+				width: 357px;
+				height: 360px;
+				transform: rotate(-30deg);
+			}
+			& img:nth-child(2) {
+				display: block;
+				top: 253px;
+				right: 0px;
+				width: 180px;
+			}
+		}
+	}
+
+	@media (min-width: 1320px) {
+		background-image: url('../media/img/header-bg-request.png');
+
+		&__content {
+			max-width: 1192px;
+		}
+
+		&__title {
+			font-size: 56px;
+			letter-spacing: -0.75px;
+			padding-top: 148px;
+		}
+
+		&__text {
+			font-family: 'PT Sans';
+			font-size: 28px;
+			line-height: 110%;
+			letter-spacing: -0.25px;
+			width: 670px;
+		}
+
+		&__btn {
+			padding: 24px 87px;
+			margin-bottom: 171px;
+		}
+		&__image {
+			& img:first-child {
+				filter: opacity(0.75);
+				top: 152px;
+				right: 0px;	
+				width: 479px;
+				height: 483px;
+			}
+			& img:nth-child(2) {
+				top: 275px;
+				right: 105px;
+				width: 240px;
+			}
+		}
+		&__star {
+			display: block;
+			width: 229px;
+			height: 276px;
+			position: absolute;
+			top: 122px;
+			right: 42px;
+		}
+	}
+
+
+}
+
+.wrap {
+	position: relative;
+	background: #FFFFFF;
+	@media (min-width: 768px) {
+		padding-bottom: 500px;
+	}
+
+	@media (min-width: 1320px) {
+		padding-bottom: 532px;
+	}
+}
+.form {
+	background: #FFFFFF;
+	padding: 48px 16px 56px;
+	max-width: 343px;
+	margin: 0 auto;
+
+	&__title {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 135%;
+		text-align: center;
+		letter-spacing: 0.25px;		
+		color: $gray-10;
+		margin-bottom: 24px;
+	}
+	&__col {padding: 0;}
+
+	&__row {
+		margin: 0;
+	}
+
+	&__input {
+		background: #FFFFFF;		
+		border: 1px solid $green-8;
+		border-radius: 4px;
+		padding: 19.5px 24px !important;
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.25px;
+		color: $gray-10;
+		margin-bottom: 12px;
+		width: 100%;
+		&::placeholder {
+			font-family: 'Fira Sans';
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 150%;
+			letter-spacing: 0.25px;
+			color: $gray-10;
+		}
+	}
+
+	&__btn {
+		background: $green-8;
+		border: 1px solid $green-8;
+		border-radius: 4px;
+		padding: 20px 0;
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;		
+		letter-spacing: 0.25px;
+		color: #FFFFFF;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 12px;
+	}
+
+	&__info {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		text-align: center;
+		letter-spacing: 0.25px;		
+		color: $gray-12;
+		width: 317px;
+		margin: 0 auto 12px;
+	}
+
+	&__rights, &__rights a {
+		font-family: 'Fira Sans';
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 150%;		
+		text-align: center;
+		letter-spacing: 0.5px;		
+		color: $gray-light-10;
+		width: 328px;
+		margin: 0 auto;
+	}
+	&__rights a {
+		text-decoration: underline;
+	}
+
+	@media (min-width: 768px) {
+		padding: 48px 51px;
+		border: 1px solid #F3F5F7;
+		box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+		border-radius: 4px;
+		position: absolute;
+		top: -90px;
+		left: 32px;
+		right: 32px;
+		max-width: 704px;
+
+		&__row {
+			margin: 0 0 20px;
+			column-gap: 12px;
+		}
+	
+		&__input {
+			padding: 26px 24px !important;
+		}
+	
+		&__btn {
+			padding: 22px 0;
+			width: 300px;
+			margin: 0 auto 18px;
+			font-size: 20px;
+			display: block;
+		}
+	
+		&__info {
+			width: 100%;
+			font-size: 18px;
+			line-height: 135%;
+			margin: 0 auto 18px;
+		}
+	}
+	@media (min-width: 1320px) {
+		padding: 48px 103px;
+		max-width: 1194px;
+		top: -100px;
+		left: 64px;
+		right: 64px;
+
+		&__title {
+			font-family: 'PT Sans';
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 110%;
+			margin-bottom: 40px;
+		}
+	
+		&__row {
+			column-gap: 19px;
+			margin: 0;
+		}
+	
+		&__input {
+			padding: 24.5px 24px !important;
+			font-size: 18px;
+			line-height: 135%;
+			margin-bottom: 23.5px;
+
+			&::placeholder {
+				font-size: 18px;
+				line-height: 135%;
+			}
+		}
+
+		&__btn { margin: 0 auto 24px;}
+	
+		&__info {
+			font-family: 'PT Sans';
+			font-weight: 700;
+			line-height: 110%;
+			margin: 0 auto 24px;
+		}
+	}
+}
+

@@ -1,0 +1,38 @@
+@media (min-width: 1320px) {
+  .top-menu-container .d-xxl-block {
+    display: block !important;
+  }
+  .top-menu-container .d-xxl-none {
+    display: none !important;
+  }
+  .top-menu-container .logo img {
+    height: 32px;
+  }
+  .top-menu-container .top-menu {
+    padding: 20px 64px;
+  }
+  .top-menu-container .top-menu a {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .top-menu-container .top-menu .buttons-container > * {
+    margin-left: 26px;
+  }
+  .top-menu-container .top-menu .buttons-container .phone-link {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+  }
+  .top-menu-container .top-menu .buttons-container .btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.0025em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    padding: 7px 8px;
+  }
+  .top-menu-container .top-menu .buttons-container .btn:hover {
+    color: white;
+  }
+}

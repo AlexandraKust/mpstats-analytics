@@ -1,0 +1,54 @@
+@media (min-width: 1320px) {
+    .top-menu-container {
+        //TODO убрать когда xxl будет заменен с 1349 на 1320
+        .d-xxl-block {
+            display: block !important;
+        }
+
+        //TODO убрать когда xxl будет заменен с 1349 на 1320
+        .d-xxl-none {
+            display: none !important;
+        }
+
+        .logo {
+            img {
+                height: 32px;
+            }
+        }
+
+        .top-menu {
+            padding: 20px 64px;
+
+            a {
+                font-size:   18px;
+                line-height: 18px;
+            }
+
+            .buttons-container {
+                & > * {
+                    margin-left: 26px;
+                }
+
+                .phone-link {
+                    font-size:      20px;
+                    line-height:    24px;
+                    letter-spacing: 0.0015em;
+                }
+
+                .btn {
+                    font-weight:    400;
+                    font-size:      14px;
+                    line-height:    15px;
+                    letter-spacing: 0.0025em;
+                    border:         1px solid rgba(255, 255, 255, 0.4);
+                    border-radius:  4px;
+                    padding:        7px 8px;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

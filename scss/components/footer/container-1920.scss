@@ -1,0 +1,19 @@
+@media (min-width: 1920px) {
+    .block-footer {
+        .top {
+            .menu {
+                width: 50%;
+            }
+        }
+
+        .bottom {
+            .block-1 {
+                justify-content: start !important;
+            }
+
+            .block-1, .block-2 {
+                width: 50%;
+            }
+        }
+    }
+}

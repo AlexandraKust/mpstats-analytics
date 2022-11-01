@@ -1,0 +1,13 @@
+@media (min-width: 1920px) {
+  .block-footer .top .menu {
+    width: 50%;
+  }
+  .block-footer .bottom .block-1 {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .block-footer .bottom .block-1, .block-footer .bottom .block-2 {
+    width: 50%;
+  }
+}

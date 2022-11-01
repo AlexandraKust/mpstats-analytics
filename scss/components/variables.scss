@@ -1,0 +1,70 @@
+$grid-breakpoints:     (
+                               xs: 0,
+                               sm: 576px,
+                               md: 768px,
+                               lg: 992px,
+                               xl: 1200px,
+                               xxl: 1320px //TODO заменить потом на 1320
+                       );
+
+$container-max-widths: (
+                               xs: 320px,
+                               md: 727px,
+                               xxl: 1292px
+                       );
+
+$btn-font-weight:      600;
+
+$black:                #2f2f31;
+
+$gray:                 #6d7a88;
+$gray-2:               #5f6a7c;
+$gray-3:               #394252;
+$gray-4:               #394252;
+$gray-5:               #85888c;
+$gray-6:               #768089;
+$gray-7:               #909498;
+$gray-8:               #435159;
+$gray-9:               #89949a;
+$gray-10:              #3f4651;
+$gray-11:              #5c626c;
+$gray-12:              #8b9097;
+
+$gray-dark:            rgba(221, 221, 221, 0.2);
+$gray-dark-2:          #4d5562;
+$gray-dark-3:          #2d3440;
+
+$gray-light:           #e2e8ef;
+$gray-light-2:         #878c91;
+$gray-light-3:         #ccd4d9;
+$gray-light-4:         #d8dfe9;
+$gray-light-5:         #c6c7cb;
+$gray-light-6:         #e1eaf0;
+$gray-light-7:         #eef1f3;
+$gray-light-8:         #b6e6cf;
+$gray-light-9:         #f0f2f4;
+$gray-light-10:        #c3c7cb;
+$gray-light-11:        #f3f5f7;
+
+$green-1:              #0cbd68;
+$green-2:              #13b15c;
+$green-3:              #21aa68;
+$green-5:              #24c76f;
+$green-6:              #78d600;
+$green-7:              #099539;
+$green-8:              #38ac5a;
+
+$green-light:          #a3cbba;
+$green-light-2:        #edf8f2;
+$green-light-3:        #bce5cd;
+$green-light-4:        #bde3ce;
+$green-light-5:        #f0f7f1;
+$green-light-6:        #f0faf2;
+
+$pink:                 #cc2676;
+$pink-2:               #d35994;
+
+$pink-light:           #fffbfd;
+$pink-light-2:         #fbf0f4;
+
+$blue:                 #303948;

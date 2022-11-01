@@ -1,0 +1,6 @@
+@media (min-width: 1700px) {
+  .block-footer .btn-up {
+    top: 50%;
+    right: -100px;
+  }
+}

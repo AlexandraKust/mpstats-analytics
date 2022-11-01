@@ -1,0 +1,2893 @@
+@import "base"; // не трогать
+
+// тут стили которые надо сверстать
+
+// шаблоны
+%title {
+	// всё что меньше 768
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 120%;
+	letter-spacing: 0.0015em;
+	color: $gray-10;
+	span {color: $green-8;}
+
+	@media (min-width: 768px) {//всё что больше 768 и до 1320
+		font-size: 32px;
+		letter-spacing: 0.0025em;
+		line-height: 110%;
+	}
+	@media (min-width: 1320px) {//всё что больше 1320
+		font-size: 40px;
+		letter-spacing: 0;
+	}
+}
+
+.custom-container {
+	max-width: 1320px;
+	min-width: 320px;
+	padding: 0 16px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+
+	@media (min-width: 768px) { //>768
+		padding: 0 32px;
+	}
+	@media (min-width: 1320px) {
+		padding: 0 64px;
+	}
+}
+a:hover {
+	cursor: url('../media/icon/Hand-pointing.png'), pointer;
+}
+
+.container-fluid {
+	padding: 0;
+}
+// ---------- Шапка ------------
+.header {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url('../media/img/header-bg-mobile.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+
+	&__content {
+		padding: 92px 0 49px;
+		position: relative;
+		z-index: 5;
+		max-width: 375px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-family: 'PT Sans',  sans-serif;
+		font-weight: 700;
+		color: #FFFFFF;
+		padding-top: 224px;
+		width: 100%;
+		text-align: center;
+		font-size: 28px;
+		line-height: 110%;
+		letter-spacing: -0.25px;
+		margin: 0 auto 8px;
+	}
+
+	&__row {
+		margin: 0;
+	}
+
+	&__item {
+		padding: 0;
+		width: 100%;
+	}
+
+	&__subtitle {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		line-height: 130%;
+		letter-spacing: 0.25px;
+		color: #FFFFFF;		
+		width: 100%;
+		font-size: 18px;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+
+	&__btn {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		line-height: 140%;		
+		letter-spacing: 0.25px;	
+		text-align: center;	
+		color: #FFFFFF;
+		background: #3F4651;
+		border-radius: 4px;
+		font-size: 18px;
+		padding: 12.5px 94.5px;
+		margin: 0 auto 28px;
+		display: block;
+	}
+
+	&__statistic {
+		text-align: center;
+		max-width: 343px;
+		margin: 0 auto;
+	}
+
+	&__number {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		color: #FFFFFF;
+		margin: 0 0 8px;
+		font-size: 28px;
+		line-height: 110%;
+		letter-spacing: -0.25px;
+	}
+
+	&__info {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;
+		letter-spacing: 0.25px;
+		color: #FFFFFF;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		& img:first-child {
+			top: 92px;
+			right: 0px;	
+			width: 208px;
+			height: 210px;	
+			transform: rotate(90deg);
+		}
+		& img:nth-child(2) {
+			top: 149.5px;
+			right: 46.5px;
+			width: 107px;
+			height: 101px;
+			transform: rotate(45deg);
+		}
+		img {
+			width: 100%;
+			position: absolute; 
+		}
+		
+	}
+
+	&__star {
+		position: absolute;
+		top: 136px;
+		width: 159px;
+		height: 170px;
+		left: 25px;
+	}
+
+	&__instruments {
+		padding: 0;
+	}
+
+
+	@media (min-width: 768px) {
+		background-position: right;
+
+		&__content {
+			padding: 127px 0 74px;
+			max-width: 704px;
+		}
+		&__title {
+			font-size: 48px;
+			line-height: 105%;
+			letter-spacing: -0.5px;
+			max-width: 374px;
+			padding: 0;
+			text-align: left;
+			margin: 0 0 24px;
+		}
+		&__item {
+			padding-right: 37px;
+			flex: 0 1 auto;
+			width: auto;
+		}
+		&__subtitle {
+			font-size: 20px;
+			line-height: 135%;
+			width: 289px;
+			margin-bottom: 53px;
+			text-align: left;
+		}
+		&__btn {
+			padding: 21px 64px;
+			font-size: 20px;
+			margin: 0 0 29px;
+		}
+		&__statistic {
+			display: block;
+			width: 299px;
+			text-align: left;
+			margin: 0;
+		}
+		&__number {
+			margin: 0;
+			font-size: 48px;
+			line-height: 105%;
+			letter-spacing: -0.5px;
+		}
+		&__info {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 150%;
+		}
+		&__image {
+			& img:first-child {
+				top: 143px;
+				width: 362px;
+				height: 365px;
+				transform: rotate(0deg);
+			}
+			& img:nth-child(2) {
+				top: 238px;
+				right: 74.75px;
+				width: 185px;
+				height: 174px;
+				transform: rotate(0deg);
+			}
+		}
+		&__star {
+			top: 317px;
+			right: -80px;
+			left: auto;
+			height: 356px;
+			width: auto;
+		}
+	}
+	@media (min-width: 1320px) {
+		background-image: url('../media/img/header-bg.png');
+
+		&__content {
+			padding: 153px 0 88px;
+			max-width: 1192px;
+		}
+		&__title {
+			font-size: 72px;
+			line-height: 100%;
+			letter-spacing: -0.75px;
+			max-width: 605px;
+			margin-bottom: 36px;
+		}
+		&__subtitle {
+			font-size: 32px;
+			margin-bottom: 88px;
+			width: 100%;
+		}
+		&__btn {
+			font-size: 20px;
+			margin-bottom: 35px;
+			padding: 24px 53.5px;
+			display: inline-block;
+		}
+		&__statistic {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			max-width: 100%;
+		}
+		&__number {
+			flex-shrink: 0;
+			font-size: 48px;
+			line-height: 105%;
+			letter-spacing: -0.5px;
+			margin-right: 20px;
+		}
+		&__info {
+			font-size: 16px;
+			line-height: 150%;
+		}
+		&__image {
+			
+			& img:first-child {
+				top: 150px;
+				right: 73px;
+				width: 479px;
+				height: 483px;
+			}
+			& img:nth-child(2) {
+				top: 275px;
+				right: 179px;
+				width: 240px;
+				height: 230px;
+			}
+		}
+		&__star {
+			top: 343px;
+			right: -63px;
+			width: 352px;
+			height: 417px;
+		}
+	}
+}
+
+// ---------- блок Инструменты в шапке ------------
+.instruments {
+	display: none;
+
+	&__item {
+		background: rgba(255, 255, 255, 0.85);
+		box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+		border-radius: 8px;
+	}
+	&__title {
+		font-family: 'PT Sans';
+		line-height: 110%;
+		font-weight: 700;
+		color: #FFFFFF;
+		background: linear-gradient(90.72deg, #9399FF 8.66%, #6C99FF 44.36%, #18C0FF 96.55%);
+		border-radius: 50px;
+		width: fit-content;
+		letter-spacing: 0.25px;	
+		margin-bottom: 8px;
+	}
+	&__text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		line-height: 150%;
+		color: $gray-10;
+		letter-spacing: 0.25px;		
+	}
+	
+
+	@media (min-width: 768px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 536px;
+		position: relative;
+		z-index: 5;
+		gap: 8px;
+		min-width: 368px;
+		flex: 1 0 50%;
+		height: fit-content;
+		align-self: flex-end;
+
+		&__item {
+			padding: 12px 16px;
+			min-width: 181px;
+		}
+		&__title {
+			font-size: 12px;
+			padding: 4px 12px;
+		}
+		&__text {
+			font-size: 11px;
+		}
+	}
+	@media (min-width: 1320px) {
+		gap: 25px;
+		max-width: 553px;
+
+		&__item {
+			padding: 20px 24px;
+		}
+		&__title {
+			font-size: 18px;
+			padding: 3px 10px;
+		}
+		&__text {
+			font-size: 13px;
+		}
+	}
+}
+
+// ----------- блок Видео --------------------
+.video {
+	width: 100%;
+	padding: 54px 0;
+	background: #FFFFFF;
+
+	&__row {
+		gap: 39px;
+		margin: 0;
+	}
+
+	&__item {
+		width: 100%;
+		padding: 0;
+	}
+	&__item-content {
+		position: relative;
+		border-radius: 8px;
+		background: url('../media/img/video.png') 0 0/100% 100% no-repeat;
+		margin: 0 auto;
+		width: 343px;
+		padding: 20px 32px 1px;
+	}
+
+	&__name {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 110%;
+		letter-spacing: -0.25px;
+		color: $gray-10;
+		width: 128px;
+		margin-bottom: 92px;
+	}
+
+	&__btn {
+		background: #FFFFFF;
+		box-shadow: 20px 0px 50px rgba(132, 158, 190, 0.5);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		bottom: -24px;
+
+		svg {
+			position: relative;
+			width: 16px;
+			height: 18px;
+			left: 2px;
+		}
+	}
+
+	&__text {
+		width: 100%;
+		padding: 0;
+	}
+	&__text-content {
+		width: 343px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		font-family: 'Fira Sans';
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 150%;
+		color: $gray-10;
+		letter-spacing: 0.0025em;
+		margin-bottom: 8px;
+		max-width: 527px;
+	}
+
+	&__info {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		color: #5C626C;
+		letter-spacing: 0.0015em;
+		b {font-weight: 700;}
+	}
+
+
+	@media (min-width: 768px) {
+		padding: 60px 0;
+
+		&__row {
+			gap: 46px;
+		}
+		&__item-content {
+			width: 518px;
+			padding: 32px 24px 24px;
+		}
+		&__name {
+			font-size: 32px;
+			margin-bottom: 53px;
+			width: 239px;
+			letter-spacing: -0.5px;
+		}
+		&__btn {
+			width: 80px;
+			height: 80px;
+			box-shadow: 0px 4px 8px rgba(28, 136, 0, 0.08), 0px 20px 40px rgba(111, 170, 0, 0.32);
+			position: static;
+			bottom: 0;
+			svg {
+				width: 28px;
+				height: 30px;
+				left: 4px;
+			}
+		}
+		&__text-content {
+			width: 527px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			line-height: 130%;
+			letter-spacing: 0;
+		}
+		&__info {
+			font-size: 16px;
+			letter-spacing: 0;
+		}
+	}
+	@media (min-width: 1320px) {
+		padding: 80px 0;
+
+		&__row {
+			gap: 60px;
+		}
+		&__item {
+			flex: 0 0 580px;
+		}
+		&__item-content {
+			padding: 35px 40px 32px;
+			width: 580px;
+		}
+		&__name {
+			font-size: 40px;
+			line-height: 105%;
+			letter-spacing: -0.5px;
+			width: 239px;
+			margin-bottom: 27px;
+		}
+		&__btn {
+			box-shadow: 0px 4px 8px rgba(102, 153, 255, 0.5), 0px 20px 40px rgba(204, 153, 255, 0.5);
+			width: 104px;
+			height: 104px;
+			svg {
+				left: 4px;
+			}
+		}
+		&__text {
+			flex: 0 1 527px;
+		}
+		&__title {
+			margin-bottom: 24px;
+		}
+		&__subtitle {
+			font-size: 18px;
+			letter-spacing: 0.0015em;
+			margin-bottom: 12px;
+		}
+		&__info {
+			font-size: 18px;
+			letter-spacing: 0;
+		}
+	}
+}
+
+// ----------- блок Нам доверяют --------------------
+.trust {
+	padding: 0 0 54px;
+
+	&__title {
+		font-family: 'Fira Sans';
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 150%;		
+		letter-spacing: 0.25px;
+		color: $gray-10;
+		margin-bottom: 16px;
+		text-align: center;
+	}
+
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	-ms-overflow-style: none;  /* IE и Edge */
+	&__row {
+		width: 100%;
+		overflow-x: scroll;
+		scrollbar-width: none;
+	}
+
+	&__item {
+		filter: brightness(0) saturate(100%) invert(77%) sepia(8%) saturate(129%) hue-rotate(169deg) brightness(104%) contrast(88%);
+  		width:fit-content;
+		margin-right: 27px;
+		height: 18px;
+		img {
+			height: 100%;
+			display: block;
+		}
+
+		&:hover {
+			filter: none;
+		}
+	}
+
+	@media (min-width: 768px) {
+		padding: 0 0 60px;
+
+		&__title {
+			font-family: 'PT Sans';
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 110%;
+			margin-bottom: 24px;
+		}
+		&__item {
+			margin-right: 30px;
+			height: 20px;
+		}
+
+	}
+	@media (min-width: 1320px) {
+		padding: 0 0 90px;
+
+		&__title {
+			font-size: 24px;
+			margin-bottom: 48px;
+		}
+		&__item {
+			margin-right: 45px;
+			height: 30px;
+		}
+	}
+}
+
+// ----------- блок Эфир -------------------
+.broadcast {
+	background: $gray-light-11;
+	padding: 39px 0 50px;
+
+	&__row {
+		margin: 0;
+	}
+
+	&__text {
+		order: 2;
+		padding: 0;
+	}
+
+	&__text-content {
+		max-width: 341px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 12px;
+	}
+
+	&__subtitle {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.25px;
+		color: $gray-10;
+		margin-bottom: 32px;
+	}
+
+	&__btn {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;		
+		text-align: center;
+		letter-spacing: 0.25px;
+		color: $gray-10;
+		padding: 15px 0;
+		width: 100%;
+		border: 1px solid $green-8;
+		border-radius: 4px;
+		background: transparent;
+	}
+
+	&__picture {
+		order: 1;
+		padding: 0;
+	}
+
+	&__picture-content {
+		width: 200px;
+		margin: 0 auto 9px;
+		position: relative;
+		& img:first-child {
+			width: 100%;
+		}
+		& img:last-child {
+			width: 123px;
+			position: absolute;
+			left: 0;
+			top: 14px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		padding: 40px 0 21px;
+		&__row {
+			max-width: 768px;
+			margin: 0 auto;
+		}
+		&__text {
+			order: 1;
+		}
+		&__text-content {
+			margin: 0;
+		}
+		&__title {
+			margin-bottom: 24px;
+		}
+		&__subtitle {
+			font-weight: 500;
+			font-size: 16px;
+			margin-bottom: 40px;
+		}
+		&__btn {
+			font-size: 20px;
+			padding: 21px 0;
+			width: 300px;
+		}
+		&__picture {
+			order: 2;
+		}
+	
+		&__picture-content {
+			width: 353px;
+			margin: 0 0 0 auto;
+			& img:last-child {
+				width: 220px;
+				left: -11px;
+				top: 55px;
+			}
+		}
+	}
+
+	@media (min-width: 1320px) {
+		padding: 30px 0 16px;
+
+		&__row {
+			max-width: 100%;
+			margin: 0;
+		}
+		&__text-content {
+			max-width: 475px;
+		}
+		&__title {
+			margin-bottom: 34px;
+		}
+		&__subtitle {
+			font-size: 18px;
+			line-height: 135%;
+			letter-spacing: 0.5px;
+			margin-bottom: 48px;
+		}
+		&__picture-content {
+			width: 377px;
+			margin: 0 auto;
+			& img:last-child {
+				width: 260px;
+				left: -84px;
+				top: 30px;
+			}
+		}
+	}
+}
+
+// ---------- блок Зачем и для чего нужен сервис -----------
+.service {
+	padding: 55px 0 0;
+
+	&__title {
+		@extend %title;
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		font-family: 'Fira Sans';
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 150%;
+		color: $gray-10;
+		letter-spacing: 0.0025em;
+		span {text-transform: uppercase;}
+	}
+
+	&__arrow-prev, &__arrow-next {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: #FFFFFF;		
+		border: 1px solid $green-8;
+		transition: all 0.5s ease-out 0s;
+		position: absolute;
+		bottom: 0;
+		right: 92px;
+		svg {fill: $green-8;}
+
+		&:hover {
+			background: $green-8;
+			svg {fill: #FFFFFF}
+			transition: all 0.5s ease-out 0s;
+		}
+	}
+
+	&__arrow-next {
+		right: 31px;
+	}
+
+	&__row {
+		padding: 32px 0 56px 16px;
+		overflow-x: scroll;
+		scrollbar-width: none;
+	}
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	-ms-overflow-style: none;  /* IE и Edge */
+
+	&__item {
+		background: #FFFFFF;		
+		border: 1px solid $gray-light-11;
+		box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+		border-radius: 8px;
+		padding: 25px 26px;
+		margin-right: 16px;
+		flex: 0 0 192px;
+	}
+
+	&__item-icon {
+		width: 44px;
+		height: 44px;
+		margin-bottom: 18px;
+	}
+
+	&__item-title {
+		font-family: 'PT Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 120%;
+		color: $gray-10;		
+		letter-spacing: 0.0015em;
+		margin-bottom: 16px;
+	}
+
+	&__item-text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		color: $gray-10;
+		letter-spacing: 0.25px;
+		flex: 1 1 auto;
+	}
+
+	@media (min-width: 768px) {
+		padding: 60px 0 0;
+
+		&__title {
+			margin-bottom: 24px;
+		}
+		&__subtitle {
+			font-size: 18px;
+			letter-spacing: 0.0015em;
+		}
+		&__row {
+			padding: 40px 0 59px 32px;
+		}
+		&__item {
+			box-shadow: none;
+			padding: 40px 25px 20px 40px;
+			background: transparent;
+			flex: 0 0 224px;
+			transition: all 0.5s ease-out 0s;
+			&:hover {
+				background: #FFFFFF;
+				box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+				transition: all 0.5s ease-out 0s;
+			}
+		}
+		&__item-icon {
+			margin-bottom: 26px;
+		}
+	}
+	@media (min-width: 1320px) {
+		padding: 80px 0 0;
+
+		&__row {
+			padding: 48px 64px 116px 64px;
+			max-width: 1320px;
+			margin: 0 auto;
+			overflow-x: hidden;
+		}
+		&__item {
+			margin-right: 18px;
+		}	
+	}
+}
+
+// ---------- блок Попробовать перед покупкой ------------
+.testing {
+	padding: 0 0 56px;
+
+	&__row {
+		gap: 28px;
+		margin: 0;
+	}
+
+	&__picture, &__text {
+		padding: 0;
+	}
+
+	&__picture-content {
+		background: linear-gradient(96.28deg, $green-8 4.95%, #89CC5A 95.66%);
+		box-shadow: 20px 0px 50px rgba(5, 12, 20, 0.08);
+		border-radius: 8px;
+		position: relative;
+		width: 341px;
+		height: 192px;
+		overflow: hidden;
+		margin: 0 auto;
+		img {position: absolute;}
+		#phone {
+			width: 266px;
+			height: 200px;
+			bottom: -14.1px;
+			left: -16.46px;
+			z-index: 3;
+		}
+		#timer {
+			width: 118px;
+			height: 128px;
+			right: 21.75px;
+			bottom: 21.72px;
+			z-index: 3;
+		}
+		#rectagle {
+			width: 314px;
+			height: 122.5px;
+			right: -10.3px;
+			bottom: -29.6px;
+			z-index: 2;
+		}
+		#star {
+			width: 635px;
+			height: 678px;
+			top: -488px;
+			right: 134px;
+			filter: blur(12.5px);
+			transform: matrix(0.61, -0.79, -0.79, -0.61, 0, 0);
+			z-index: 1;
+		}
+	}
+
+	&__text-content {
+		max-width: 341px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 12px;
+	}
+
+	&__subtitle {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.25px;		
+		color: $gray-10;
+		margin-bottom: 32px;
+	}
+
+	&__btn {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.25px;
+		color: #FFFFFF;
+		padding: 15px 0;
+		width: 100%;
+		background: $green-8;
+		display: inline-block;
+		border-radius: 4px;
+	}
+
+	@media (min-width: 768px) {
+		padding: 0 0 60.5px;
+
+		&__row {
+			gap: 59px;
+			max-width: 768px;
+			margin: 0 auto;
+		}
+		&__picture-content {
+			width: 343px;
+			height: 324px;
+			margin: 0 0 0 auto;
+			#phone {
+				width: 349px;
+				height: 292px;
+				bottom: -7.5px;
+				left: -32px;
+			}
+			#timer {
+				width: 134px;
+				height: 145px;
+				right: 14px;
+				bottom: 94.5px;
+			}
+			#rectagle {
+				width: 305.7px;
+				height: 120px;
+				right: 0;
+				bottom: 0;
+			}
+			#star {
+				top: -384px;
+			}
+		}
+		&__text-content {
+			max-width: 300px;
+			margin: 0;
+		}
+		&__title {
+			margin-bottom: 24px;
+		}
+	
+		&__subtitle {
+			font-weight: 500;
+			font-size: 16px;
+			margin-bottom: 54px;
+		}
+	
+		&__btn {
+			font-size: 20px;
+			padding: 21px 0;
+		}
+	}
+
+	@media (min-width: 1320px) {
+		padding: 0 0 80px;
+
+		&__row {
+			max-width: 100%;
+			margin: 0;
+		}
+		&__picture-content {
+			width: 580px;
+			height: 408px;
+			#phone {
+				width: 454px;
+				height: 341px;
+				bottom: 0;
+				left: -28px;
+			}
+			#timer {
+				width: 202px;
+				height: 219px;
+				right: 37px;
+				bottom: 60px;
+			}
+			#rectagle {
+				width: 517px;
+				height: 182px;
+			}
+			#star {
+				top: -370px;
+				right: 255px;
+			}
+		}
+		&__text-content {
+			max-width: 527px;
+			margin: 0 auto 0 0;
+		}
+		&__subtitle {
+			font-size: 18px;			
+			letter-spacing: 0.0015em;
+		}
+		&__btn {
+			width: 300px;
+			font-family: 'PT Sans';
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 100%;			
+			letter-spacing: -0.02em;
+			padding: 25px 0;
+		}
+	}
+}
+
+// ---------- блок Интеграция лк по API -----------------
+.integration {
+	padding: 45px 0 82px;
+	background: $gray-light-11;
+
+	&__row {
+		width: 100%;
+		gap: 40px;
+		margin: 0;
+	}
+
+	&__main, &__list {
+		padding: 0;
+	}
+
+	&__main-content, &__list-content {
+		width: 340px;
+		margin: 0 auto;
+	}
+
+	&__icon {
+		width: 48px;
+		height: 48px;
+		margin-bottom: 16px;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 16px;
+		padding-right: 20px;
+		text-align: justify;
+	}
+
+	&__text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;		
+		letter-spacing: 0.25px;
+		color: $gray-11;
+		margin-bottom: 29px;
+		b {font-weight: 600;}
+		padding-right: 20px;
+	}
+
+	&__btn {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.25px;
+		color: $gray-10;
+		background: transparent;
+		padding: 15px 0;
+		width: 100%;
+		border: 1px solid $green-8;
+		border-radius: 4px;
+		margin-bottom: 16px;
+	}
+
+	&__info {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 150%;
+		text-align: center;
+		letter-spacing: 0.25px;		
+		color: $gray-11;
+	}
+
+	@media (min-width: 768px) {
+		padding: 60px 0;
+		&__row {
+			gap: 62px;
+			justify-content: center;
+		}
+		&__main-content{
+			margin: 0 0 0 auto;
+		}
+		&__list-content {
+			margin: 0;
+			width: 302px;
+		}
+		&__icon {
+			margin-bottom: 24px;
+		}
+		&__title {
+			margin-bottom: 24px;
+			padding-right: 0;
+			text-align: left;
+		}
+		&__text {
+			font-size: 18px;
+			letter-spacing: 0;
+			margin-bottom: 48px;
+			padding-right: 0;
+		}
+		&__btn {
+			font-size: 20px;
+			padding: 21px 0;
+			width: 300px;
+			margin-bottom: 24px;
+		}
+	
+		&__info {
+			font-size: 13px;
+			text-align: left;
+			width: 274px;
+		}
+	}
+	@media (min-width: 1320px) {
+		padding: 80px 0 60px;
+		&__row {
+			gap: 112px;
+		}
+		&__main-content, &__list-content {
+			width: 100%;
+			margin: 0;
+		}
+		&__title {
+			width: 400px;
+		}
+		&__text {
+			letter-spacing: 0.0015em;
+			padding-right: 10px;
+			b {font-weight: 500;}
+		}
+	}
+}
+
+// ---------- подблоки из блока Интеграция --------------
+.list-item {
+	position: relative;
+	&:not(:last-child) {
+		margin-bottom: 48px;
+	}
+
+	&__icon {
+		width: 16px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__title {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 110%;
+		color: $gray-10;
+		letter-spacing: 0.25px;
+		padding-left: 38px;
+		margin-bottom: 16px;
+	}
+
+	&__text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 150%;
+		color: $gray-10;		
+		letter-spacing: 0.25px;
+		padding-left: 38px;
+	}
+
+	@media (min-width: 768px) {
+		&:not(:last-child) {
+			margin-bottom: 46px;
+		}
+		&__icon {
+			position: static;
+			margin-bottom: 17.3px;
+			width: 32px;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&__title, &__text  {
+			padding-left: 0;
+		}
+
+		&_white {
+			background: rgba(255, 255, 255, 0.85);
+			border-radius: 12px;
+			padding: 24px;
+		}
+	
+	}
+	@media (min-width: 1320px) {
+		&:not(:last-child) {
+			margin-bottom: 66px;
+		}
+		&__title {
+			font-size: 20px;
+			line-height: 120%;
+			letter-spacing: 0.0015em;
+			padding-right: 150px;
+		}
+		&__text {
+			font-size: 14px;
+			padding-right: 50px;
+		}
+		&_white {
+			border-radius: 4px;
+			.list-item__title {padding-right: 0;}
+		}
+	}
+}
+
+// ---------- блок Почему нельзя выходить на мп без данных -------------
+.reasons {
+	padding: 56px 0;
+
+	&__row {
+		width: 100%;
+		margin: 0;
+	}
+
+	&__text, &__enumeration {
+		padding: 0;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 16px;
+		width: 300px;
+	}
+
+	&__subtitle {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.25px;				
+		color: $gray-11;
+		margin-bottom: 24px;
+		width: 280px;
+	}
+
+	&__enumeration-content {
+		width: 100%;
+	}
+
+	@media (min-width: 768px) {
+		padding: 60px 0;
+		&__row {
+			margin: 0 auto;
+			max-width: 740px;
+			gap: 62px;
+		}
+		&__text-content {
+			width: 345px;
+		}
+		&__subtitle {
+			font-weight: 500;
+			font-size: 16px;
+			margin: 0;
+		}
+		&__enumeration-content {
+			max-width: 302px;
+			margin: 0;
+		}
+	}
+	@media (min-width: 1320px) {
+		padding: 100px 0 77px;
+		&__row {
+			max-width: none;
+			margin: 0;
+		}
+		&__title {
+			width: 495px;
+		}
+		&__subtitle {
+			font-size: 18px;
+			letter-spacing: 0.0015em;
+			width: 495px;
+		}
+		&__enumeration-content {
+			max-width: none;
+			margin: 0;
+		}
+	}
+}
+// ----------- подблок с нумерацией ---------------------
+.enumeration {
+
+	&__item {
+		background: #FFFFFF;		
+		border: 1px solid $gray-light-11;
+		border-radius: 8px;
+		padding: 10px 48px 10px 16px;
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+
+	&__number {
+		flex: 0 0 32px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 24px;
+	}
+
+	&__text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 150%;
+		letter-spacing: 0.25px;
+		color: $gray-11;
+	}
+
+	@media (min-width: 768px) {
+		&__item {
+			padding: 10px 18px 10px 16px;
+		}
+		&__number {
+			margin-right: 16px;
+		}
+	}
+	@media (min-width: 1320px) {
+		&__item {
+			padding: 13px 15px 13px;
+			transition: all 0.5s ease-out 0s;
+			&:not(:last-child) {
+				margin-bottom: 12px;
+			}
+			&:hover {
+				box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+				transition: all 0.5s ease-out 0s;
+			}	
+		}
+		&__text {
+			font-size: 14px;
+			letter-spacing: 0.0025em;
+		}
+	}
+}
+
+// ----------- блок Аналитика ------------------
+.analytics {
+
+	&__row {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__list, &__description {
+		padding: 0;
+		position: relative;
+	}
+
+	@media (min-width: 1320px) {
+		&__row {
+			gap: 32px;
+			overflow: visible;
+			margin-bottom: 80px;
+		}	
+		.custom-container{
+			overflow: visible !important;
+		}	
+	}
+}
+// ----------- подблок с вкладками блока Аналитика --------
+.list {
+
+	&__title {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 110%;
+		color: $gray-10;
+		letter-spacing: 0.25px;
+		margin-bottom: 16px;
+	}
+
+	&__nav {
+		overflow-x: scroll;
+		width: 100%;
+		scrollbar-width: none;
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	-ms-overflow-style: none;  /* IE и Edge */
+
+	&__item {
+		flex: 0 0 auto;
+		margin: 0 12px 0 0;
+	}
+
+	&__link {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 13px;
+		text-align: center;
+		letter-spacing: 0.25px;		
+		color: $gray-10;
+		padding: 4px 12px;
+		display: inline-block;
+		border-radius: 30px;
+		background: #FFFFFF;
+		border: 1px solid $gray-light-10;
+
+		&.active {
+			color: #FFFFFF;
+			background: #6699FF;
+			border: none;
+			text-decoration: none;
+		}
+	}
+
+	@media (min-width: 768px) {
+		&__title { 
+			font-size: 32px;
+			letter-spacing: -0.5px;
+			margin-bottom: 24px;
+		}
+		&__nav:not(:last-child) {
+			margin-bottom: 40px;
+		}
+		&__link {
+			font-size: 20px;
+			letter-spacing: -0.02em;
+			line-height: 180%;
+			&.active {
+				font-weight: 700;
+			}
+		}
+	}
+
+	@media (min-width: 1320px) {
+		&__title { 
+			font-size: 28px;
+			margin-bottom: 16px;
+		}
+		&__nav {
+			overflow-x: hidden;	
+			margin-bottom: 24px;
+		}
+		&__item {
+			width: 100%;
+		}
+		&__link {
+			padding-left: 40px;
+			border: none;
+			border-radius: 0;
+			border-bottom-left-radius: 4px;
+			border-top-left-radius: 4px;
+			width: calc(100% - 12px);
+			text-align: left;
+			position: relative;
+			&.active {
+				&::after {
+					content: "";
+					position: absolute;
+					z-index: 50;
+					right: -11.5px;
+					top: 0;
+					width: 0;
+					height: 0;
+					border-top:  22.5px solid transparent;
+					border-left: 12px solid #6699FF;
+					border-bottom:  22.5px solid transparent;
+				}
+			}
+			
+		}
+	}
+}
+// ----------- подблок с описанием сервиса блока Аналитика --------
+.description {
+	padding: 32px 0 56px;
+
+	&__content {
+		background: #FFFFFF;
+		box-shadow: 20px 0px 80px rgba(63, 70, 81, 0.15);
+		border-radius: 10px;
+		padding: 24px;
+	}
+
+	&__title {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 110%;
+		letter-spacing: 0.25px;		
+		color: $gray-10;
+		margin-bottom: 8px;
+	}
+
+	&__subtitle {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.25px;
+		color: $gray-10;
+		margin-bottom: 8px;
+	}
+
+	&__image {
+		width: 100%;
+		margin-bottom: 24px;
+		img {width: 100%;}
+	}
+
+	&__btn {
+		width: 100%;
+		background: #38AC5A;
+		border-radius: 10px;
+		padding: 15px 0;
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;		
+		text-align: center;
+		letter-spacing: 0.25px;
+		color: #FFFFFF;	
+		margin-bottom: 12px;
+		display: inline-block;
+	}
+
+	&__info {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 150%;
+		text-align: center;
+		letter-spacing: 0.25px;
+		color: $gray-10;
+	}
+
+	@media (min-width: 768px) {
+		padding: 40px 0 60px;
+		&__content {	
+			padding: 40px;
+		}
+		&__title {
+			font-size: 32px;
+			letter-spacing: -0.5px;
+			margin-bottom: 12px;
+		}
+		&__subtitle {
+			font-weight: 500;
+			font-size: 16px;
+			margin-bottom: 28px;
+		}
+		&__image {margin-bottom: 32px;}
+		&__btn {
+			border-radius: 4px;
+			padding: 16px 0;
+			font-size: 20px;
+		}
+		&__info {
+			font-weight: 500;
+			font-size: 16px;
+		}
+	}
+	@media (min-width: 1320px) {
+		padding: 0;
+		
+		&__content {
+			border-radius: 12px;	
+			padding: 60px 40px;
+			position: sticky !important;
+			top: 90px;
+
+		}
+		&__title {
+			font-size: 40px;
+			line-height: 105%;
+			margin-bottom: 18px;
+		}
+		&__subtitle {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 110%;
+			margin-bottom: 36px;
+		}
+		&__image {margin-bottom: 60px;}
+
+	}
+}
+
+// ----------- блок ТОП-5 ---------------------
+.rating {
+	padding: 0 0 56px;
+	&__row {
+		margin: 0 auto;
+		gap: 56px;
+		width: 343px;
+	}
+
+	&__col {
+		padding: 0;
+	}
+
+	&__content {
+		width: 100%;
+	}
+	&:first-child {margin-bottom: 56px;}
+
+	&__title {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 110%;
+		color: $gray-10;
+		letter-spacing: 0.25px;
+		margin-bottom: 19px;
+	}
+
+	&__info {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 150%;
+		color: $gray-10;
+		text-align: right;
+		letter-spacing: 0.25px;
+		margin-bottom: 4px;
+	}
+
+	@media (min-width: 768px) {
+		padding: 0 0 60px;
+
+		&__row {
+			gap: 60px;
+			width: 528px;
+		}
+		&__content {
+			width: 530px;
+			margin: 0 auto;
+		}
+		&__title {
+			font-size: 28px;
+			line-height: 114%;
+			letter-spacing: -0.03em;
+			margin-bottom: 9px;
+		}
+		&__info {
+			font-size: 14px;
+			line-height: 114%;
+			letter-spacing: -0.02em;
+			margin-bottom: 8px;
+		}
+	}
+	@media (min-width: 1320px) {
+		padding: 0 0 77px;
+
+		&__row {
+			gap: 32px;
+			margin: 0;
+			width: 100%;
+		}
+		&__content {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+// ----------- подблоки блока ТОП-5 ---------------------
+.rating-item {
+	padding: 8px 0;
+	border-top: 1px solid $gray-light-11;
+
+	&__number {
+		color: $gray-light-10;
+		margin-right: 13px;
+
+		& span:first-child{
+			font-family: 'PT Sans';
+			font-weight: 700;
+			font-size: 20px;
+			letter-spacing: -0.02em;
+		}
+		& span:last-child {
+			font-family: 'Fira Sans';
+			font-weight: 400;
+			font-size: 12px;
+			text-align: center;
+			letter-spacing: -0.02em;
+			height: 12px;
+			margin-bottom: 5px;
+		}
+		.first {color: #6699FF;}
+		.plus {color: $green-8;}
+		.minus {color: #E35B63;}
+	}
+
+	&__name {
+		font-family: 'Fira Sans';
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 150%;
+		color: $gray-10;
+		letter-spacing: 0.5px;
+		flex: 1 1 auto;
+	}
+
+	&__sales {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 150%;
+		letter-spacing: 0.25px;
+		gap: 5px;
+	}
+
+	&__count span{
+		margin-right: 5px;
+	}
+
+	@media (min-width: 768px) {
+		&__number {
+			margin-right: 9px;
+		}
+		&__name {
+			font-family: 'PT Sans';
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 120%;		
+			letter-spacing: -0.02em;
+		}
+		&__sales {
+			font-family: 'PT Sans';
+			font-size: 14px;
+			line-height: 114%;
+			letter-spacing: -0.02em;
+			gap: 22px;
+		}
+	}
+	@media (min-width: 1320px) {
+		&__sales {
+			gap: 13px;
+		}
+	}
+}
+
+// ---------- блок Преимущетсва -----------
+.benefits {
+	padding: 55px 0 0;
+	background: $gray-light-9;
+
+	&__title {
+		@extend %title;
+	}
+
+	&__arrow-prev, &__arrow-next {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: #FFFFFF;		
+		border: 1px solid $green-8;
+		transition: all 0.5s ease-out 0s;
+		position: absolute;
+		bottom: 0;
+		right: 92px;
+		svg {fill: $green-8;}
+
+		&:hover {
+			background: $green-8;
+			svg {fill: #FFFFFF}
+			transition: all 0.5s ease-out 0s;
+		}
+	}
+
+	&__arrow-next {
+		right: 31px;
+	}
+
+	&__row {
+		padding: 28px 0 56px 16px;
+		overflow-x: scroll;
+		scrollbar-width: none;
+	}
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	-ms-overflow-style: none;  /* IE и Edge */
+
+	&__item {
+		background: #FFFFFF;		
+		border: 1px solid $gray-light-11;
+		box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+		border-radius: 12px;
+		padding: 40px;
+		margin-right: 18px;
+		flex: 0 0 224px;
+	}
+
+	&__item-icon {
+		width: 24px;
+		height: 24px;
+		margin-bottom: 18px;
+	}
+
+	&__item-title {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 110%;
+		color: $gray-10;		
+		letter-spacing: 0.25px;
+		margin-bottom: 16px;
+	}
+
+	&__item-text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		color: $gray-12;
+		letter-spacing: 0.25px;
+	}
+
+	@media (min-width: 768px) {
+		padding: 53.5px 0 0;
+
+		&__title {
+			padding: 6.5px 0;
+		}
+
+		&__row {
+			padding: 45.5px 0 60px 32px;
+		}
+	}
+	@media (min-width: 1320px) {
+		padding: 80px 0 0;
+
+		&__title { padding: 0; }
+
+		&__row {
+			padding: 60px 64px 86px;
+			max-width: 1320px;
+			margin: 0 auto;
+			overflow-x: hidden;
+		}	
+	}
+}
+
+
+// ---------- блок Тарифы -----------
+.tariffs {
+	padding: 55px 0 0;
+	background: #FFFFFF;
+
+	&__title {
+		@extend %title;
+		margin-bottom: 24px;
+	}
+
+	&__date {
+		row-gap: 13px;
+		column-gap: 15px;
+	}
+
+	&__date-item {
+		flex: 0 0 auto;
+		font-family: 'Fira Sans';
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 150%;		
+		letter-spacing: 0.5px;
+		color: $gray-10;
+		position: relative;
+		padding-left: 28px;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 20px;
+			height: 20px;
+			border: 1px solid $gray-10;
+			border-radius: 50%;
+			background: #FFFFFF;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		// при клике присвоить класс active
+		&.active {
+			&::before {
+				background: $gray-10;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				left: 4.6px;
+				top: 4.6px;
+				width: 10.77px;
+				height: 10.77px;
+				border-radius: 50%;
+				background-color: #FFFFFF;
+			}
+		}
+	}
+
+	&__procents {
+		background: #6699FF;
+		border-radius: 67px;
+		margin-left: 8px;
+		padding: 1px 13px;
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 140%;
+		letter-spacing: 0.25px;		
+		color: #FFFFFF;
+	}
+
+	&__row {
+		overflow-x: scroll;
+		scrollbar-width: none;
+		padding: 24px 0 55px 16px;
+	}
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	-ms-overflow-style: none;  /* IE и Edge */
+
+	&__item {
+		background: #FFFFFF;		
+		border: 1px solid $gray-light-11;
+		border-radius: 12px;
+		padding: 36px 18px;
+		margin-right: 18px;
+		flex: 0 0 224px;
+		color: $gray-10;
+
+		&_special {
+			color: #FFFFFF;
+			background: linear-gradient(90.72deg, #9399FF 8.66%, #6C99FF 44.36%, #18C0FF 96.55%);
+		}
+
+		&:nth-child(2) {
+			box-shadow: 10px 0px 44px rgba(5, 12, 20, 0.08);
+		}
+
+	}
+
+	&__item-title {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 110%;
+		letter-spacing: 0.25px;
+		margin-bottom: 8px;
+	}
+
+	&__item-price {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 52px;
+		padding-bottom: 18px;
+		margin-bottom: 18px;
+		border-bottom: 1px solid $gray-light-10;
+	}
+
+	&__item-text {
+		flex: 1 1 auto;
+	}
+
+	&__item-label {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 150%;
+		letter-spacing: 0.25px;
+		padding-left: 22.85px;
+		margin-bottom: 12px;
+		position: relative;
+		&::before {
+			content: url('../media/icon/check_small.png');
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 13.71px;
+			height: 10.74px;
+		}
+		&:last-child {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__item-btn {
+		background: $green-8;
+		border-radius: 4px;
+		width: 100%;
+		padding: 10px 0;
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;		
+		text-align: center;
+		letter-spacing: 0.25px;
+		color: #FFFFFF;
+
+		&_white {
+			background: #FFFFFF;
+			border: 1px solid $green-8;
+			color: $gray-10;
+		}
+		&_white-border {
+			background: #FFFFFF;
+			color: $gray-10;
+		}
+	}
+
+	@media (min-width: 768px) {
+		padding: 60px 0 0;
+		&__title { margin-bottom: 32px; }
+
+		&__date {
+			column-gap: 16px;
+			row-gap: 0;
+		}
+		&__date-item {				
+			font-size: 18px;
+			line-height: 110%;
+			letter-spacing: 0.25px;
+			font-weight: 700;
+		}
+		&__procents {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 19px;
+			padding: 0.5px 13px;
+		}
+		&__row {
+			padding: 48px 0 81px 32px;
+		}
+
+	}
+	@media (min-width: 1320px) {
+		padding: 82px 0 0;
+		&__title { margin-bottom: 48px; }
+
+		&__date {
+			column-gap: 32px;
+		}
+
+		&__date-item {
+			font-size: 20px;
+		}
+
+		&__procents {
+			padding: 3.5px 13px;
+		}
+
+		&__row {
+			padding: 65px 64px 79px;
+			max-width: 1320px;
+			margin: 0 auto;
+			overflow-x: hidden;
+		}	
+
+	}
+}
+
+
+// ---------- блок Отзывы ------------
+.feedback {
+	background: $gray-light-11;
+	padding: 56px 0 0;
+
+	&__title {
+		@extend %title;
+		text-align: center;
+	}
+
+	&__row {
+		padding: 24px 16px 88px;
+		overflow-x: scroll;
+		scrollbar-width: none;
+	}
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	-ms-overflow-style: none;  /* IE и Edge */
+
+	&__item {
+		background: #FFFFFF;		
+		border: 1px solid $gray-light-11;
+		box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+		border-radius: 8px;
+		text-align: center;
+		padding: 40px 32px 28px;
+		flex: 0 0 343px;
+		margin: 0 17px;
+	}
+
+	&__text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;		
+		letter-spacing: 0.0015em;		
+		color: $gray-10;
+		margin-bottom: 40px;
+		padding: 0;
+		flex: 1 1 auto;
+	}
+
+	&__autor {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.0025em;		
+		color: $gray-10;
+		margin-bottom: 11px;
+	}
+
+	&__contacts {
+		column-gap: 10px;
+		max-width: 290px;
+	}
+
+	&__city, &__label {
+		font-family: 'Fira Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 150%;
+		letter-spacing: 0.0025em;				
+		color: $gray-light-10;
+	}
+	&__city {
+		order: 3;
+	}
+
+	&__grade {
+		span {
+			font-family: 'Fira Sans';
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 150%;
+			letter-spacing: 0.0025em;
+			color: $green-8;
+			margin-left: 6px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		padding: 60px 0 0;
+		&__row {
+			padding: 40px 32px 100px;
+		}
+		&__item {
+			border-radius: 12px;
+			padding: 40px;
+			flex: 0 0 518px;
+		}
+		&__text {
+			font-size: 18px;
+			line-height: 135%;
+			letter-spacing: 0.25px;
+		}
+		&__autor {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 120%;
+			letter-spacing: 0.0015em;
+			margin-bottom: 9.5px;
+		}
+		&__contacts {
+			max-width: 345px;
+		}
+		&__city {
+			order: 1;
+			margin-right: 14px;
+			font-size: 14px;
+		}
+		&__label {
+			order: 2;
+			font-size: 14px;
+		}
+		&__grade {
+			order: 3;
+			span {font-size: 14px;}
+		}
+	}
+
+	@media (min-width: 1320px) {
+		padding: 80px 0 0;
+
+		&__title {
+			text-align: left;
+			span { color: $gray-10;}
+		}
+		&__row {
+			padding: 48px 0 136px;
+			width: 100%;
+		}
+		&__item {
+			border-radius: 8px;
+			flex: 0 0 579px;
+		}
+	}
+}
+
+
+// ---------- блок Новости ------------
+.news {
+	padding: 56px 0;
+	background: #FFFFFF;
+
+	&__title {
+		@extend %title;
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		font-family: 'Fira Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.0015em;		
+		color: $gray-11;		
+		margin-bottom: 32px;
+	}
+
+	&__arrow-prev, &__arrow-next {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: #FFFFFF;		
+		border: 1px solid $green-8;
+		transition: all 0.5s ease-out 0s;
+		position: absolute;
+		bottom: 48px;
+		right: 92px;
+		svg {fill: $green-8;}
+
+		&:hover {
+			background: $green-8;
+			svg {fill: #FFFFFF}
+			transition: all 0.5s ease-out 0s;
+		}
+	}
+
+	&__arrow-next {
+		right: 31px;
+	}
+
+	&__row {
+		width: 100%;
+	}
+
+	@media (min-width: 768px) {
+		padding: 60px 0 0;
+
+		&__title {
+			margin-bottom: 24px;
+		}
+		&__subtitle {
+			font-size: 18px;
+			letter-spacing: 0;
+			margin-bottom: 48px;
+		}
+
+		&__row {
+			padding: 0 0 60px 32px;
+			overflow-x: scroll;
+			scrollbar-width: none;
+		}
+		::-webkit-scrollbar { 
+			display: none; 
+		}
+		-ms-overflow-style: none;  /* IE и Edge */
+	}
+	@media (min-width: 1320px) {
+		padding: 64px 0 0;
+
+		&__row {
+			padding: 0 64px 80px;
+			max-width: 1320px;
+			margin: 0 auto;
+		}	
+	}
+}
+
+// ---------- карточка блока Новости -----------
+.slide-news {
+	width: 100%;
+	padding: 12px 0;
+	border-top: 1px solid $gray-light-10;
+	&:last-child {
+		border-bottom: 1px solid $gray-light-10;
+	}
+
+	&__image {
+		width: 64px;
+		height: 64px;
+		border-radius: 8px;
+		margin: 0 16px;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__label {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 150%;		
+		letter-spacing: 0.0025em;
+		margin-bottom: 4px;
+
+		&_green { color: $green-8; }
+		&_red { color: #F16CAC; }
+	}
+
+	&__title {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 120%;
+		color: $gray-10;
+		letter-spacing: 0.0015em;
+	}
+
+	&__text, &__btn {
+		display: none;
+	}
+
+	@media (min-width: 768px) {
+		flex: 0 0 440px;
+		width: 440px;
+		padding: 0;
+		border-radius: 12px;
+		border: 1px solid $gray-light-11;
+		border-top: none;
+		margin-right: 30px;
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&:hover .slide-news__content {
+			box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+			transition: all 0.5s ease-out 0s;
+		}
+
+		&__image {
+			width: 100%;
+			height: 224px;
+			border-radius: 0;
+			margin: 0;
+		}
+		&__content {
+			width: 100%;
+			padding: 24px 40px 40px;
+			border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px;
+			transition: all 0.5s ease-out 0s;
+		}
+		&__label {font-size: 14px;}
+		&__title {
+			font-size: 20px;
+			letter-spacing: 0;
+			margin-bottom: 24px;
+		}
+		&__text {
+			display: block;
+			flex: 1 1 auto;
+			font-family: 'Fira Sans';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: $gray-10;
+			margin-bottom: 24px;
+		}
+		&__btn {
+			display: inline-block;
+			font-family: 'Fira Sans';
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 110%;
+			color: $gray-10;
+			letter-spacing: 0.0025em;
+			padding: 12px 24px;
+			background: #FFFFFF;
+			border: 1px solid $green-8;
+			border-radius: 4px;
+		}
+	}
+}
+
+
+// ---------- блок Статистика -----------------
+.statistics {
+	padding-bottom: 56px;
+
+	&__row {
+		margin: 0 auto;
+		gap: 11px;
+	}
+
+	&__item {
+		background: #F3F5F7;
+		border-radius: 5px;
+		padding: 39px 25px;
+	}
+
+	&__icon {
+		margin-right: 27px;
+	}
+
+	&__text {
+		flex: 0 0 auto;
+	}
+
+	&__name {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;		
+		letter-spacing: 0.25px;		
+		color: $gray-12;
+	}
+
+	&__number {
+		svg {
+			position: relative;
+			bottom: 6px;
+		}
+	}
+
+	&__numeric {
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 110%;
+		letter-spacing: -0.25px;		
+		color: $gray-10;
+		margin-right: 12px;
+	}
+
+	@media (min-width: 768px) {
+		padding-bottom: 61px;
+
+		&__row { gap: 30px;}
+		&__item { border-radius: 4px;}
+	}
+
+	@media (min-width: 1320px) {
+		padding-bottom: 79px;
+
+		&__row { gap: 28px; width: 100%;}
+		&__icon {margin: 0;}
+	}
+}
+
+
+// ---------- popup ------------
+.modal {
+	&__dialog {
+		max-width: none;
+	}
+	&__content {
+		width: 343px;
+		background: #FFFFFF;	
+		box-shadow: 20px 0px 80px rgba(63, 70, 81, 0.15);
+		border-radius: 10px;
+		margin: auto;
+		padding: 56px 32px;
+		position: relative;
+	}
+
+	&__close {
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		width: 23px;
+		height: 23px;
+		span {
+			display: block;
+			width: 100%;
+			height: 1px;
+			transform: rotate(45deg);
+			background: $gray-10;
+			position: relative;
+			&::before {
+				content: "";
+				width: 100%;
+				height: 1px;
+				background: $gray-10;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotate(-90deg);
+			}
+		}
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 12px;
+	}
+
+	&__text {
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;		
+		letter-spacing: 0.25px;		
+		color: $gray-10;
+		margin-bottom: 17px;
+		padding-right: 15px;
+	}
+
+	&__row {
+		margin: 0;
+		gap: 32px;
+	}
+
+	&__item {
+		padding: 0;
+	}
+
+	&__himself {
+		border: 1px solid #F3F5F7;
+		box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+		border-radius: 4px;
+		height: 100px;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 12px;
+
+		#phone-himself {
+			width: 220px;
+			position: absolute;
+			top: -12px;
+			left: 40px;
+			z-index: 2;
+			transform: rotate(-10deg) skewX(12deg) skewY(7deg);
+		}
+		#green-star-1 {
+			filter: blur(7.5px) drop-shadow(0 8px 20px $gray-12);
+			width: 269px;
+			height: 242px;
+			position: absolute;
+			right: -50px;
+			top: 0;
+			z-index: 1;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 180px;
+			height: 168px;
+			background: $gray-light-11;
+			filter: blur(50px);
+			z-index: 5;
+			display: none;
+		}
+	}
+
+	&__manager {
+		border: 1px solid #F3F5F7;
+		box-shadow: 0px 10px 44px rgba(5, 12, 20, 0.08);
+		border-radius: 4px;
+		height: 100px;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 12px;
+
+		#man {
+			width: 196px;
+			position: absolute;
+			right: -10px;
+			top: -10px;
+			z-index: 2;
+
+		}
+		#green-star-2 {
+			filter: blur(7.5px) drop-shadow(0 10px 24px $gray-12);
+			width: 209px;
+			height: 257px;
+			position: absolute;
+			left: 20px;
+			top: -100px;
+			z-index: 1;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 180px;
+			height: 168px;
+			background: $gray-light-11;
+			filter: blur(50px);
+			z-index: 5;
+			display: none;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		width: 100%;
+		padding: 8.5px 0;
+		font-family: 'Fira Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.25px;
+		color: #FFFFFF;
+		text-align: center;
+		border-radius: 4px;
+
+		&_himself {
+			background: $gray-10;
+		}
+		&_manager {
+			background: linear-gradient(41.13deg, #D8EC1D -63.33%, #A2E02B -13.57%, #5DD03D 56.09%, #2BC44B 115.81%, #0CBD53 158.1%, #00BA56 182.98%);
+		}
+	}
+
+	@media (min-width: 768px) {
+		&__content {
+			width: 610px;
+			padding: 60px 50px;
+		}
+		&__close {
+			top: 32px;
+			right: 32px;
+		}
+		&__title {
+			margin-bottom: 24px;
+		}
+		&__text {
+			font-size: 18px;
+			line-height: 135%;
+			margin-bottom: 35px;
+			padding-right: 60px;
+		}
+		&__row {
+			gap: 14px;
+		}
+		&__item {
+			flex: 0 0 248px;
+		}
+		&__himself {
+			height: 248px;
+			margin: 0;
+			#phone-himself {
+				width: 263px;
+				top: 0;
+				left: 0px;
+				z-index: 2;
+				transform: rotate(0) skewX(0) skewY(0);
+			}
+			#green-star-1 {
+				width: 239px;
+				height: 257px;
+				right: -40px;
+				top: 5px;
+			}
+			&::after {
+				display: block;
+				bottom: -100px;
+				right: 10px;
+			}
+		}
+		&__manager {
+			height: 248px;
+			margin: 0;
+
+			#man {
+				width: 251px;
+				right: 0;
+				top: 0;	
+			}
+			#green-star-2 {
+				filter: blur(7.5px) drop-shadow(0 10px 24px $gray-12);
+				width: 239px;
+				left: 90px;
+				top: 30px;
+			}
+
+			&::after {
+				display: block;
+				bottom: -100px;
+				right: 10px;
+			}
+		}
+
+		&__link {
+			width: 220px;
+			position: absolute;
+			bottom: 23px;
+			left: 14px;
+			right: 14px;
+			z-index: 10;
+			margin: 0;
+		}
+	}
+	@media (min-width: 1320px) {
+		&__content {
+			width: 1024px;
+			padding: 80px 85px 56px;
+		}
+		&__title {
+			margin-bottom: 32px;
+		}
+		&__text {
+			font-family: 'PT Sans';
+			font-size: 28px;
+			line-height: 110%;
+			letter-spacing: -0.25px;
+			margin-bottom: 57px;
+			padding-right: 120px;
+		}
+		&__row {
+			gap: 72px;
+		}
+		&__item {
+			flex: 0 0 390px;
+		}
+		&__himself {
+			height: 390px;
+			#phone-himself {
+				width: 415px;
+			}
+			#green-star-1 {
+				width: 317px;
+				height: 344px;
+				right: -60px;
+				top: 30px;
+			}
+			&::after {
+				display: block;
+				bottom: -130px;
+				right: 0px;
+				width: 290px;
+				height: 237px;
+			}
+		}
+		&__manager {
+			height: 390px;
+			#man {
+				width: 395px;
+			}
+			#green-star-2 {
+				width: 317px;
+				height: 344px;
+				left: 180px;
+				top: 50px;
+			}
+
+			&::after {
+				display: block;
+				bottom: -130px;
+				right: 80px;
+				width: 290px;
+				height: 237px;
+			}
+		}
+
+		&__link {
+			width: 310px;
+			bottom: 36px;
+			padding: 16px 0;
+			font-size: 20px;
+			line-height: 140%;
+			margin: 0 auto;
+		}
+	}
+}

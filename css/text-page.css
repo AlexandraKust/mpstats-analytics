@@ -1,0 +1,52 @@
+.text-page-container {
+  padding-bottom: 40px;
+}
+
+.text-page-container .header {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 37px;
+  color: white;
+}
+
+.text-page-container .header:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 40px);
+  background: -webkit-radial-gradient(119.21% 250.53% at 112.13% 126.62%, #c3ec1d 0%, #2bc44b 33.18%, #2a9f51 59.63%, #2a9f51 99%);
+  background: -o-radial-gradient(119.21% 250.53% at 112.13% 126.62%, #c3ec1d 0%, #2bc44b 33.18%, #2a9f51 59.63%, #2a9f51 99%);
+  background: radial-gradient(119.21% 250.53% at 112.13% 126.62%, #c3ec1d 0%, #2bc44b 33.18%, #2a9f51 59.63%, #2a9f51 99%);
+  background-size: cover;
+  border-radius: 0 0 40px 40px;
+}
+
+.text-page-container .header h1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+}
+
+.text-page-container .card {
+  border: none;
+  -webkit-box-shadow: 0 100px 118px rgba(5, 10, 25, 0.07), 0 22px 26px rgba(5, 10, 25, 0.04), 0 6px 7px rgba(5, 10, 25, 0.02);
+          box-shadow: 0 100px 118px rgba(5, 10, 25, 0.07), 0 22px 26px rgba(5, 10, 25, 0.04), 0 6px 7px rgba(5, 10, 25, 0.02);
+}
+
+@media (min-width: 768px) {
+  .text-page-container .header {
+    padding-top: 100px;
+  }
+  .text-page-container .header:before {
+    background-size: 110% auto;
+    border-radius: 0 0 80px 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 60px);
+  }
+}
